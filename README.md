@@ -35,9 +35,9 @@ onsofa/docs/
 3. In Settings → Pages → Source, select `main` → `/docs`.
 4. Afterthat, this site will be live at `https://danielsaatchi.github.io/onsofa/`.
 
-## Update note for version 0.1.2 (date: 20260527)
+## Update note (version 0.1.2) 
 1. Reported bugs for version 0.1.1 are fixed.
-2. New features will be available soon for the upcoming version 0.1.3 or 0.2.0
+2. New features may be available soon for the upcoming version 0.1.3 or 0.2.0
 
 
 Happy hacking! 🚀
