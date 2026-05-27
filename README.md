@@ -37,7 +37,7 @@ onsofa/docs/
 
 ## Update note [date: 20260527]
 1. Reported bugs for version 0.1.1 are fixed.
-2. New features will be available soon for upcoming version 0.2.0
+2. New features will be available soon for the upcoming version 0.1.3 or 0.2.0
 
 
 Happy hacking! 🚀
