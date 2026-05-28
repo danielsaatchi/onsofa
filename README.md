@@ -14,7 +14,7 @@ onsofa/docs/
 ├── contact.html               # Contact-us page
 ├── style.css                  # All CSS rules
 ├── typing.js                  # Typing animation logic
-├── style.css                  # All CSS rules
+├── server.py                  # Port Forwarding and Server 
 ├── README.md                  # Instruction
 ├── CODE_OF_CONDUCT.md         # Opensource note
 └── fonts/
