@@ -20,7 +20,7 @@ onsofa/docs/
 └── fonts/
     └── CascadiaCode-Regular.woff2   # Optional – if not from URL (check .css file)
 └── metadata_images/
-    └── ONSOFA-favicon.ico         # favicon
+    └── ONSOFA-favicon.ico     # favicon
 ```
 
 ## How to Deploy (minimal static theme)
