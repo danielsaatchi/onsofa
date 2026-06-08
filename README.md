@@ -39,7 +39,7 @@ onsofa/docs/
 
 ## Update note (version 0.1.4) 
 1. Reported bugs for version 0.1.3 are fixed.
-2. New features may be available for the upcoming version 0.1.4
+2. New features may be available for the upcoming version 0.1.5
 3. server.py is added for IP allocation and port forwarding for static IP & cloud service. You can also integrate it for decentralized network that are coming to edge systems if you are familiar with them in telecom and blockchain nodes.
 4. You can now add images (e.g. PNG or JPEG)
 5. Flavicon Icon and .PNG example are added in a new folder for metadata_images, and html headers
