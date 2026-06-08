@@ -1,4 +1,4 @@
-🛋️ONSOFA.ai
+##🛋️ONSOFA.ai
 ONSOFA Studio [4] Artificial Intelligence
 
 This repository contains a lean startup website that demonstrates how to host a multi‑page site on GitHub Pages using plain HTML/CSS and minimal JavaScript.
