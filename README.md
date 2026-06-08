@@ -39,7 +39,7 @@ onsofa/docs/
 
 ## Customization and Adoptions
 by small business and personal brands:
-<img width="1834" height="795" alt="image" src="https://github.com/user-attachments/assets/1a574546-1dff-4985-8d64-e32af4a30e63" />
+<img width="1831" height="760" alt="image" src="https://github.com/user-attachments/assets/bd542667-be58-4c3e-82f0-79a661c26be8" />
 
 ## Reader mode compatibility 
 Reader mode compatibility with Apple Safari & Google Chrome (mobile and desktop devices)
