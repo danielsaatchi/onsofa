@@ -37,13 +37,12 @@ onsofa/docs/
 3. In Settings → Pages → Source, select `main` → `/docs`.
 4. Afterthat, this site will be live at `https://danielsaatchi.github.io/onsofa/`.
 
-## Update note (version 0.1.3) 
-1. Reported bugs for version 0.1.2 are fixed.
+## Update note (version 0.1.4) 
+1. Reported bugs for version 0.1.3 are fixed.
 2. New features may be available for the upcoming version 0.1.4
 3. server.py is added for IP allocation and port forwarding for static IP & cloud service. You can also integrate it for decentralized network that are coming to edge systems if you are familiar with them in telecom and blockchain nodes.
 4. You can now add images (e.g. PNG or JPEG)
 5. Flavicon Icon and .PNG example are added in a new folder for metadata_images, and html headers
 6. Onsofa dynamic-GPT theme is adopted and customized for small business and personal brand  like ONSOFA, XSEALD, DAATCHI, DSDT, and AIJAM for various colors and additional deployments and developments depending on needs.
-
 
 Happy hacking! 🚀
