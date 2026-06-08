@@ -1,4 +1,4 @@
-<img width="1943" height="816" alt="image" src="https://github.com/user-attachments/assets/d689b588-c6a6-40f8-a03a-3e1a1833cb93" /><img width="1091" height="81" alt="image" src="https://github.com/user-attachments/assets/c4ff6548-f7ff-4a4b-aaa1-aadfde9c17bd" /><img width="1463" height="81" alt="image" src="https://github.com/user-attachments/assets/fb12318a-d17a-428e-8fd0-fa9dc2fed271" /># 🛋️ONSOFA.ai
+🛋️ONSOFA.ai
 ONSOFA Studio [4] Artificial Intelligence
 
 This repository contains a lean startup website that demonstrates how to host a multi‑page site on GitHub Pages using plain HTML/CSS and minimal JavaScript.
