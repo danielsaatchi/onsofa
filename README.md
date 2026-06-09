@@ -2,7 +2,7 @@
 
 ONSOFA Studio [4] Artificial Intelligence
 
-This repository contains a lean startup website that demonstrates how to host a multi‑page site on GitHub Pages using plain HTML/CSS and minimal JavaScript.
+This repository contains a lean studio website that demonstrates how to host a multi‑page site on GitHub Pages using plain HTML/CSS and minimal JavaScript.
 
 ## Repository layout
 
@@ -15,6 +15,8 @@ onsofa/docs/
 ├── contact.html               # Contact-us page
 ├── style.css                  # All CSS rules
 ├── typing.js                  # Typing animation logic
+├── theme.js                   # Toggle for light and dark theme
+├── i18ns.js                   # Multilang setup
 ├── server.py                  # Port Forwarding and Server 
 ├── README.md                  # Instruction
 ├── CODE_OF_CONDUCT.md         # Opensource note
@@ -46,12 +48,12 @@ by small business and personal brands:
 Reader mode compatibility with Apple Safari & Google Chrome (mobile and desktop devices)
 <img width="1943" height="816" alt="image" src="https://github.com/user-attachments/assets/041e3d2c-f4ff-4d86-b828-f5634b4f22d7" />
 
-## Update note (version 0.1.5) 
-1. Reported bugs for version 0.1.4 are fixed.
-2. New features may be available for the upcoming version 0.1.6
-3. server.py is added for IP allocation and port forwarding for static IP & cloud service. You can also integrate it for decentralized network that are coming to edge systems if you are familiar with them in telecom and blockchain nodes.
-4. You can now add images (e.g. PNG or JPEG)
-5. Flavicon Icon and .PNG example are added in a new folder for metadata_images, and html headers
+## Update note (version 0.2.1) 
+1. Reported bugs for version 0.1.5 are fixed.
+2. New features may be available for the upcoming version 0.2.2
+3. Multilanguage option is added 
+4. Minimal math animation is added
+5. Toggle switch for light and dark theme is added
 6. Onsofa dynamic-GPT theme is adopted and customized for small business and personal brand  like ONSOFA, XSEALD, DAATCHI, DSDT, and AIJAM for various colors and additional deployments and developments depending on needs.
 7. Reader mode compatibility with Apple Safari & Google Chrome (mobile and desktop devices)
 
