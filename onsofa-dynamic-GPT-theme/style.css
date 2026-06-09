@@ -3,7 +3,7 @@
    Dark editorial × terminal aesthetic + Light mode
    ========================================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap'); */
 
 @font-face {
   font-family: 'Cascadia Code';
@@ -70,7 +70,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Cascadia Code', 'Courier New', monospace;
+  font-family: 'Cascadia Code', /*'Courier New'*/, monospace;
   background: var(--ink);
   color: var(--text);
   line-height: 1.7;
