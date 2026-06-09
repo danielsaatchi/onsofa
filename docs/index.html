@@ -2,147 +2,128 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title> onsofa.ai >/ studio</title>
+  <title>onsofa.ai >/ studio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="metadata_images/ONSOFOA-favicon.ico" type="image/x-icon">
-
+  <script src="theme.js"></script>
+  <script src="i18n.js"></script>
 </head>
 <body>
+
   <header class="site-header">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="particles" id="particles"></div>
     <div class="container">
-      <h1 class="type-line" data-delay="700">
-        ONSOFA🛋️
-      </h1>
-      <p class="type-line" data-delay="1800">
-        Studio [4] Artificial Intelligence
-      </p>
+      <h1 class="type-line" data-delay="300" data-i18n="header_title">ONSOFA🛋️</h1>
+      <p class="type-line" data-delay="1000" data-i18n="header_sub">Studio [4] Artificial Intelligence</p>
     </div>
   </header>
 
   <nav class="site-nav">
     <div class="container nav-inner">
-      <a class="type-line" data-delay="1200" href="index.html">Studio</a>
-      <a class="type-line" data-delay="1400" href="projects.html">Projects</a>
-      <a class="type-line" data-delay="1600" href="publications.html">Publications</a>
-      <a class="type-line" data-delay="1800" href="products.html">Products</a>
-      <a class="type-line" data-delay="1800" href="collaborations.html">Collaborations</a>
-      <a class="type-line" data-delay="2000" href="contact.html">Contact</a>
+      <a class="type-line" data-delay="1200" href="index.html" data-i18n="nav_studio">Studio</a>
+      <a class="type-line" data-delay="1350" href="projects.html" data-i18n="nav_projects">Projects</a>
+      <a class="type-line" data-delay="1500" href="publications.html" data-i18n="nav_publications">Publications</a>
+      <a class="type-line" data-delay="1650" href="products.html" data-i18n="nav_products">Products</a>
+      <a class="type-line" data-delay="1800" href="collaborations.html" data-i18n="nav_collabs">Collaborations</a>
+      <a class="type-line" data-delay="1950" href="contact.html" data-i18n="nav_contact">Contact</a>
+          <button class="theme-toggle" aria-label="Toggle theme">
+        <span class="toggle-icon">☀️</span>
+        <div class="toggle-track"><div class="toggle-knob"></div></div>
+        <span class="theme-toggle-label">Light</span>
+      </button>
+      <div class="lang-switcher"></div>
     </div>
   </nav>
 
   <main class="container main-content">
+
+    <div class="chapter-marker">
+      <span>01</span><span class="chapter-line"></span><span data-i18n="ch1_label">Research Areas</span>
+    </div>
+
     <section class="card">
-      <h2 class="type-line" data-delay="2300">
-        Research Area
-      </h2>
+      <h2 class="type-line" data-delay="2200" data-i18n="card_research_h">Research Area</h2>
       <ul>
-      <p class="type-line" data-delay="2800">
-        >/: Applied Math [4] Artificial General Intelligence (AGI)
-      </p><br>
-      <p class="type-line" data-delay="2900">
-        >/: Benchmarking of NLP & LLM Developments
-      </p><br>
-      <p class="type-line" data-delay="3100">
-        >/: AI Systems Designs and AI Agents
-      </p><br>
-        <p class="type-line" data-delay="3300">
-        >/: AI in Financial Engineering and Blockchain Finance
-      </p><br>
-     </p>
-        <p class="type-line" data-delay="3500">
-        >/: AI Ethics & Ethical‑Hacking of AI Agents
-      </p><br>
+        <li class="type-line" data-delay="2500" data-i18n="r1">>/: Applied Math [4] Artificial General Intelligence (AGI)</li><br>
+        <li class="type-line" data-delay="2650" data-i18n="r2">>/: Benchmarking of NLP &amp; LLM Developments</li><br>
+        <li class="type-line" data-delay="2800" data-i18n="r3">>/: AI Systems Designs and AI Agents</li><br>
+        <li class="type-line" data-delay="2950" data-i18n="r4">>/: AI in Financial Engineering and Blockchain Finance</li><br>
+        <li class="type-line" data-delay="3100" data-i18n="r5">>/: AI Ethics &amp; Ethical-Hacking of AI Agents</li><br>
+        <li class="type-line" data-delay="3250" data-i18n="r6">>/: AI in Telecommunication and Telemedicine</li><br>
+        <li class="type-line" data-delay="3400" data-i18n="r7">>/: AI-Chips and Metamaterials Informatics</li><br>
+        <li class="type-line" data-delay="3550" data-i18n="r8">>/: Neuromorphic Brain Interface Metamaterials/Machines</li><br>
+        <li class="type-line" data-delay="3700" data-i18n="r9">>/: Sonic Intelligence and Transponder AI Systems</li><br>
+        <li class="type-line" data-delay="3850" data-i18n="r10">>/: Mechanical Intelligence &amp; Mechanical Computers</li><br>
+        <li class="type-line" data-delay="4000" data-i18n="r11">>/: AI-in-Design &amp; Computational Design</li><br>
+        <li class="type-line" data-delay="4150" data-i18n="r12">>/: Data-Driven Concept Technology Design</li><br>
+        <li class="type-line" data-delay="4300" data-i18n="r13">>/: Venture Simulations &amp; Agentic Computer Simulations</li><br>
+        <li class="type-line" data-delay="4450" data-i18n="r14">>/: AI-XR for Virtual Try On in Fashion / Gamifications / Simulations</li><br>
+        <li class="type-line" data-delay="4600" data-i18n="r15">>/: Smarthome AI / Robotic / Metamaterials Developments</li><br>
+      </ul>
+    </section>
+
+    <div class="chapter-marker" style="margin-top:3rem">
+      <span>02</span><span class="chapter-line"></span><span data-i18n="ch2_label">Studio</span>
+    </div>
+
+    <section class="card">
+      <h3 class="type-line" data-delay="4800" data-i18n="facilities_h">Facilities</h3>
+      <p class="type-line" data-delay="5100" data-i18n="facilities_p">
+        GPT API licenses, NVIDIA GPUs for Inhouse Local LLMs, Brain Interface Wizards, Electronic Musical Instruments, Music Studios, Forex Accounts for AI-FE trading bots, Laptops and GPT agentic interfaces for ethical hacking, access to startups data.
       </p>
-        <p class="type-line" data-delay="3700">
-        >/: AI in Telecommunication and Telemedicine
-      </p><br>    
-        <p class="type-line" data-delay="3900">
-        >/: AI‑Chips and Metamaterials Informatics
-      </p><br>  
-        <p class="type-line" data-delay="4100">
-        >/: Neuromorphic Brain Interface Metamaterials/Machines
-      </p><br>  
-        <p class="type-line" data-delay="4300">
-        >/: Sonic Intelligence and Transponder AI Systems
-      </p><br>  
-        <p class="type-line" data-delay="4500">
-        >/: Mechanical Intelligence & Mechanical Computers
-      </p><br>  
-        <p class="type-line" data-delay="4700">
-        >/: AI‑in‑Design & Computational Design
-      </p><br> 
-        <p class="type-line" data-delay="4900">
-        >/: Data‑Driven Concept Technology Design
-      </p><br>  
-       <p class="type-line" data-delay="5100">
-        >/: Venture Simulations & Agentic Computer Simulations
-      </p><br> 
-       <p class="type-line" data-delay="5200">
-        >/: AI-XR for Virtual Try On in Fashion/Gamifications/Simulations
-      </p><br>
-        <p class="type-line" data-delay="5300">
-        >/: Smarthome AI/Robotic/Metamaterials Developments
-      </p><br>
+    </section>
+
+    <section class="card">
+      <h3 class="type-line" data-delay="5400" data-i18n="fundings_h">Fundings</h3>
+      <br><p class="type-line" data-delay="5700" data-i18n="fundings_p">
+        Angel Investments, Private Equity, BTC/ETH Reserve, Forex P&L
+      </p>
+    </section>
+
+    <section class="card">
+      <h3 class="type-line" data-delay="5900" data-i18n="creator_h">Creator of Studio</h3>
+      <br><p class="type-line" data-delay="6100" data-i18n="creator_name">DANIEL SAATCHI (PhD)</p>
+      <br><p class="type-line" data-delay="6250" style="color: var(--muted); font-size:0.75rem; margin-top:0.4rem;" data-i18n="creator_role">
+        Computational Scientist | AI Architect | Technology Designer | Artist (Painter/Guitarist)
+      </p>
+      <div class="social-links" style="margin-top:1rem;">
+        <a href="https://x.com/danielsaatchi" target="_blank">X/Twitter</a>
+        <a href="https://scholar.google.com/citations?user=Uv7KQxEAAAAJ&hl=en" target="_blank">Google Scholar</a>
+        <a href="https://github.com/danielsaatchi/" target="_blank">GitHub</a>
+      </div>
+      <h4 class="type-line" data-delay="6400" data-i18n="education_h">Education</h4>
       <ul>
-  
+        <li class="type-line" data-delay="6550" data-i18n="edu1">>/: University of Oxford</li><br>
+        <li class="type-line" data-delay="6700" data-i18n="edu2">>/: Marie Skłodowska-Curie Actions (MSCA) AI Programme</li><br>
+        <li class="type-line" data-delay="6850" data-i18n="edu3">>/: Korea Advanced Institute of Science and Technology (KAIST)</li>
+      </ul>
     </section>
-
-    <section class="card">
-      <h3 class="type-line" data-delay="4000">
-        Facilities
-      </h3><br>
-      <p class="type-line" data-delay="4500">
-        GPT API licenses, NVIDIA GPUs for Inhouse Local LLMs, Brain Interface Wizards, Electronic Musical Instruments, Music Studios, Forex Accounts for AI-FE trading bots, Laptops and GPT agentic interfaces for ethical hacking, access to statups data.
-      </p>
-    </section>
-
-    <section class="card">
-      <h3 class="type-line" data-delay="4500">
-        Fundings
-      </h3><br>
-      <p class="type-line" data-delay="5000">
-       Angel Investments, Private Equity, BTC/ETH Reserve, Forex P&L
-      </p>
-    </section>
-
-    <section class="card">
-      <h3 class="type-line" data-delay="5000">
-        Creator of Studio
-      </h3><br>
-          <p class="type-line" data-delay="5500">
-          DANIEL SAATCHI (PhD)
-          </p><br>
-          <p class="type-line" data-delay="5700">
-          Computational Scientist | AI Architect | Technology Designer | Artist (Painter/Guitarist)
-          </p>
-          <p><a href="https://x.com/danielsaatchi" target="_blank">X/Twitter</a> | <a href="https://scholar.google.com/citations?user=Uv7KQxEAAAAJ&hl=en" target="_blank">Google Scholar</a> | <a href="https://github.com/danielsaatchi/" target="_blank">GitHub</a></p>
-        
-          <h4 class="type-line" data-delay="5000">
-          Education
-          </h4><br>
-          <p class="type-line" data-delay="5700">
-          >/: University of Oxford
-          </p><br>
-        <p class="type-line" data-delay="5900">
-          >/: Marie Skłodowska-Curie Actions (MSCA) AI Programme
-          </p><br>
-        <p class="type-line" data-delay="6200">
-          >/: Korea Advanced Institute of Science and Technology (KAIST)
-          </p><br>
-    </section>
-
 
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p class="type-line" data-delay="5800">
-         © 2026-present 🛋️ ONSOFA.ai – All rights reserved.
-      </p>
+      <p class="type-line" data-delay="2000" data-i18n="footer">© 2025-present 🛋️ ONSOFA.ai – All rights reserved.</p>
     </div>
   </footer>
 
   <script src="typing.js"></script>
+  <script>
+    // floating particles
+    const chars = ['0','1','∇','λ','∑','θ','σ','∂','α','β','π','∞','[4]','>/'];
+    const c = document.getElementById('particles');
+    for (let i = 0; i < 14; i++) {
+      const p = document.createElement('span');
+      p.className = 'particle';
+      p.textContent = chars[Math.floor(Math.random() * chars.length)];
+      p.style.left = Math.random() * 100 + '%';
+      p.style.animationDuration = (10 + Math.random() * 14) + 's';
+      p.style.animationDelay = (-Math.random() * 20) + 's';
+      c.appendChild(p);
+    }
+  </script>
 </body>
 </html>

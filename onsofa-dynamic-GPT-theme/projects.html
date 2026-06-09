@@ -5,110 +5,115 @@
   <title>onsofa.ai >/ projects</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="metadata_images/ONSOFA-icon.png" type="image/x-icon">
-
+  <link rel="icon" href="metadata_images/ONSOFOA-favicon.ico" type="image/x-icon">
+  <script src="theme.js"></script>
+  <script src="i18n.js"></script>
 </head>
 <body>
+
   <header class="site-header">
+    <div class="particles" id="particles"></div>
     <div class="container">
-      <h1 class="type-line" data-delay="700">
-        Projects
-      </h1>
-      <p class="type-line" data-delay="1800">
-        by 🛋️ONSOFA.ai
-      </p>
+      <h1 class="type-line" data-delay="300">Projects</h1>
+      <p class="type-line" data-delay="900">by 🛋️ONSOFA.ai</p>
     </div>
   </header>
 
   <nav class="site-nav">
     <div class="container nav-inner">
-      <a class="type-line" data-delay="0" href="index.html">Studio</a>
-      <a class="type-line" data-delay="0" href="projects.html">Projects</a>
-      <a class="type-line" data-delay="0" href="publications.html">Publications</a>
-      <a class="type-line" data-delay="0" href="products.html">Products</a>
-      <a class="type-line" data-delay="1800" href="collaborations.html">Collaborations</a>
-      <a class="type-line" data-delay="0" href="contact.html">Contact</a>
+      <a href="index.html" data-i18n="nav_studio">Studio</a>
+      <a href="projects.html" data-i18n="nav_projects">Projects</a>
+      <a href="publications.html" data-i18n="nav_publications">Publications</a>
+      <a href="products.html" data-i18n="nav_products">Products</a>
+      <a href="collaborations.html" data-i18n="nav_collabs">Collaborations</a>
+      <a href="contact.html" data-i18n="nav_contact">Contact</a>
+          <button class="theme-toggle" aria-label="Toggle theme">
+        <span class="toggle-icon">☀️</span>
+        <div class="toggle-track"><div class="toggle-knob"></div></div>
+        <span class="theme-toggle-label">Light</span>
+      </button>
+      <div class="lang-switcher"></div>
     </div>
   </nav>
 
   <main class="container main-content">
 
-    <h3 class="type-line" data-delay="500">
-        Versatile projects on demands by experts' feedbacks
-    </h3>
+    <div class="chapter-marker">
+      <span>Projects</span><span class="chapter-line"></span>
+      <span data-i18n="projects_intro">Versatile · Demand-Driven</span>
+    </div>
+
     <section class="card">
-      <h3 class="type-line" data-delay="700">
-       >/: Convex Portfolio Optimization
-      </h3>
-      <p class="type-line" data-delay="1200">
-        AI agent in Convex Investment Porfolio Optimization for Cryptocurrencies and Financial Engineering
+      <h3 class="type-line" data-delay="600" data-i18n="proj1_h">>/: Convex Portfolio Optimization</h3>
+      <br><p class="type-line" data-delay="900" data-i18n="proj1_p">
+        AI agent in Convex Investment Portfolio Optimization for Cryptocurrencies and Financial Engineering.
       </p>
     </section>
 
     <section class="card">
-      <h3 class="type-line" data-delay="900">
-        >/: Virtual Try On
-      </h3>
-      <p class="type-line" data-delay="1400">
-       AI agent for Virtual-Try On (In collaboration with DAATCHI studio [4] Fashion Technologies)
+      <h3 class="type-line" data-delay="1000" data-i18n="proj2_h">>/: Virtual Try On</h3>
+      <br><p class="type-line" data-delay="1300" data-i18n="proj2_p">
+        AI agent for Virtual Try-On (in collaboration with DAATCHI studio [4] Fashion Technologies).
       </p>
     </section>
 
     <section class="card">
-      <h3 class="type-line" data-delay="1100">
-       >/: Brain Interface Metamaterial Machines
-      </h3>
-      <p class="type-line" data-delay="1700">
-        Brain Interface Metammaterial Machine for Musicians/Guitarists (in collaborations with ATINNITUS band and DAATCHI studio)
-      </p>
-    </section>
-
-
-    <section class="card">
-      <h3 class="type-line" data-delay="1100">
-       >/: Octodrummer 
-      </h3>
-      <p class="type-line" data-delay="1700">
-       AI-Robotic musical system in (in collaborations with ATINNITUS band and University of Toronto) 
+      <h3 class="type-line" data-delay="1100" data-i18n="proj3_h">>/: Brain Interface Metamaterial Machines</h3>
+      <br><p class="type-line" data-delay="1400" data-i18n="proj3_p">
+        Brain Interface Metamaterial Machine for Musicians / Guitarists (in collaboration with ATINNITUS band and DAATCHI studio).
       </p>
     </section>
 
     <section class="card">
-      <h3 class="type-line" data-delay="1200">
-       >/: Venture Simualtions Technologies
-      </h3>
-      <p class="type-line" data-delay="1800">
-       AGI in Venture Simualtions in (collaborations with DAATCHI Studio and BATTPAY fintech startup) 
+      <h3 class="type-line" data-delay="1200" data-i18n="proj4_h">>/: Octodrummer</h3>
+      <br><p class="type-line" data-delay="1500" data-i18n="proj4_p">
+        AI-Robotic musical system (in collaboration with ATINNITUS band and University of Toronto).
       </p>
     </section>
 
     <section class="card">
-      <h3 class="type-line" data-delay="1300">
-       >/: Opensource Transponder AI system
-      </h3>
-      <p class="type-line" data-delay="2000">
-       Opensource Encoded Mechanical Idetfication Tags (EMIT) and SFID transponder AI system (rooted from soft robotics and intelligent materials labratory at KAIST university) 
+      <h3 class="type-line" data-delay="1300" data-i18n="proj5_h">>/: Venture Simulations Technologies</h3>
+      <br><p class="type-line" data-delay="1600" data-i18n="proj5_p">
+        AGI in Venture Simulations (in collaboration with DAATCHI Studio and BATTPAY fintech startup).
       </p>
     </section>
 
     <section class="card">
-      <h3 class="type-line" data-delay="1500">
-       >/: Multimodal Copilots for Simulations 
-      </h3>
-      <p class="type-line" data-delay="2400">
-       Agentic Computer Simulations for Engineering Design and Analysis 
+      <h3 class="type-line" data-delay="1400" data-i18n="proj6_h">>/: Opensource Transponder AI System</h3>
+      <br><p class="type-line" data-delay="1700" data-i18n="proj6_p">
+        Opensource Encoded Mechanical Identification Tags (EMIT) and SFID transponder AI system (rooted from Soft Robotics and Intelligent Materials Laboratory at KAIST).
       </p>
     </section>
+
+    <section class="card">
+      <h3 class="type-line" data-delay="1500" data-i18n="proj7_h">>/: Multimodal Copilots for Simulations</h3>
+      <br><p class="type-line" data-delay="1800" data-i18n="proj7_p">
+        Agentic Computer Simulations for Engineering Design and Analysis.
+      </p>
+    </section>
+
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p class="type-line" data-delay="3000">
-        © 2026-present 🛋️ ONSOFA.ai – All rights reserved.
-      </p>
+      <p class="type-line" data-delay="2000" data-i18n="footer">© 2025-present 🛋️ ONSOFA.ai – All rights reserved.</p>
     </div>
   </footer>
 
   <script src="typing.js"></script>
+  <script>
+    // floating particles
+    const chars = ['0','1','∇','λ','∑','θ','σ','∂','α','β','π','∞','[4]','>/'];
+    const c = document.getElementById('particles');
+    for (let i = 0; i < 14; i++) {
+      const p = document.createElement('span');
+      p.className = 'particle';
+      p.textContent = chars[Math.floor(Math.random() * chars.length)];
+      p.style.left = Math.random() * 100 + '%';
+      p.style.animationDuration = (10 + Math.random() * 14) + 's';
+      p.style.animationDelay = (-Math.random() * 20) + 's';
+      c.appendChild(p);
+    }
+  </script>
 </body>
 </html>

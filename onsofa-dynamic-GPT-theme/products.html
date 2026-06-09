@@ -5,120 +5,132 @@
   <title>onsofa.ai >/ products</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="metadata_images/ONSOFA-icon.png" type="image/x-icon">
-
+  <link rel="icon" href="metadata_images/ONSOFOA-favicon.ico" type="image/x-icon">
+  <script src="theme.js"></script>
+  <script src="i18n.js"></script>
 </head>
 <body>
+
   <header class="site-header">
-    <div class="container">
-      <h1 class="type-line" data-delay="700">
-        Products
-      </h1>
-      <p class="type-line" data-delay="1300">
-        by 🛋️ONOSFA.ai
-      </p>
+    <div class="particles" id="particles"></div>
+    <div class="container">   
+      <h1 class="type-line" data-delay="300">Products</h1>
+      <p class="type-line" data-delay="900">by 🛋️ONSOFA.ai</p>
     </div>
   </header>
 
   <nav class="site-nav">
     <div class="container nav-inner">
-      <a class="type-line" data-delay="0" href="index.html">Studio</a>
-      <a class="type-line" data-delay="0" href="projects.html">Projects</a>
-      <a class="type-line" data-delay="0" href="publications.html">Publications</a>
-      <a class="type-line" data-delay="0" href="products.html">Products</a>
-      <a class="type-line" data-delay="0" href="collaborations.html">Collaborations</a>
-      <a class="type-line" data-delay="0" href="contact.html">Contact</a>
+      <a href="index.html" data-i18n="nav_studio">Studio</a>
+      <a href="projects.html" data-i18n="nav_projects">Projects</a>
+      <a href="publications.html" data-i18n="nav_publications">Publications</a>
+      <a href="products.html" data-i18n="nav_products">Products</a>
+      <a href="collaborations.html" data-i18n="nav_collabs">Collaborations</a>
+      <a href="contact.html" data-i18n="nav_contact">Contact</a>
+          <button class="theme-toggle" aria-label="Toggle theme">
+        <span class="toggle-icon">☀️</span>
+        <div class="toggle-track"><div class="toggle-knob"></div></div>
+        <span class="theme-toggle-label">Light</span>
+      </button>
+      <div class="lang-switcher"></div>
     </div>
   </nav>
 
   <main class="container main-content">
-  <p class="type-line" data-delay="1500">
-        >:/ "Concept [2] Prototype [2] MVP [2] Product [4] Venture Creations; Simulating them!" -DS
-    </p>   
+
+    <p class="type-line" data-delay="600" data-i18n="prod_quote" style="color:var(--muted); font-size:0.78rem; font-style:italic;">
+      >:/ "Concept [2] Prototype [2] MVP [2] Product [4] Venture Creations; Simulating them!" — DS
+    </p>
+
+    <div class="chapter-marker" style="margin-top:1.5rem">
+      <span>Products</span><span class="chapter-line"></span><span>MVP · Prototype · Concept</span>
+    </div>
+
     <section class="card">
-      <h3 class="type-line" data-delay="1900">
-        >/: AI Transponder Intel Ring
-      </h3>
-      <p class="type-line" data-delay="2800">
-        [MVP phase; software/hardware], 100 manufactured NEUSARS Intel Ring, XSEALD and DAATCHI
+      <h3 class="type-line" data-delay="800" data-i18n="prod1_h">>/: AI Transponder Intel Ring</h3>
+      <br><p class="type-line" data-delay="1100">
+        <span style="color:var(--yellow)">[MVP phase · software/hardware]</span> — 100 manufactured NEUSARS Intel Ring, XSEALD and DAATCHI.
       </p>
     </section>
 
     <section class="card">
-      <h3 class="type-line" data-delay="3400">
-        >/: Conia Precision Medicine Trauma Apps
-      </h3>
-      <p class="type-line" data-delay="3900">
-        [MVP phase; software], Conia Personalized Trauma Telemedicine iOS/WatchOS App, XSEALD     </p>
-    </section>
-
-    <section class="card">
-      <h3 class="type-line" data-delay="4500">
-        BATTCOIN Blockchain Platform
-      </h3>
-      <p class="type-line" data-delay="5000">
-        [Prototype phase; software], BATTCOIN Cryptocurrency and Blockchain AI System, BATTPAY Startup and ONSOFA.ai
+      <h3 class="type-line" data-delay="1200" data-i18n="prod2_h">>/: Conia Precision Medicine Trauma Apps</h3>
+      <br><p class="type-line" data-delay="1500">
+        <span style="color:var(--yellow)">[MVP phase · software]</span> — Conia Personalized Trauma Telemedicine iOS/WatchOS App, XSEALD.
       </p>
     </section>
 
     <section class="card">
-      <h3 class="type-line" data-delay="5200">
-        Ventures Simulations Technology
-      </h3>
-      <p class="type-line" data-delay="5500">
-        [Prototype phase; software], Agentic Ventures Simulations Technologies (VST), ONSOFA.ai      </p>
+      <h3 class="type-line" data-delay="1700" data-i18n="prod3_h">>/: BATTCOIN Blockchain Platform</h3>
+      <br><p class="type-line" data-delay="2000">
+        <span style="color:var(--yellow)">[Prototype phase · software]</span> — BATTCOIN Cryptocurrency and Blockchain AI System, BATTPAY Startup and ONSOFA.ai.
+      </p>
     </section>
 
     <section class="card">
-      <h3 class="type-line" data-delay="5600">
-        Smarthome Symbiotic Metamaterials
-      </h3>
-      <p class="type-line" data-delay="5900">
-        [Prototype phase; hardware], Symbotic Lichen Schwarz Metamaterial (SLSM) and Metafoams (TSMFx), KAIST      </p>
+      <h3 class="type-line" data-delay="2200" data-i18n="prod4_h">>/: Ventures Simulations Technology</h3>
+      <br><p class="type-line" data-delay="2500">
+        <span style="color:var(--yellow)">[Prototype phase · software]</span> — Agentic Ventures Simulations Technologies (VST), ONSOFA.ai.
+      </p>
     </section>
 
     <section class="card">
-      <h3 class="type-line" data-delay="5800">
-        SFID Transponder AI System
-      </h3>
-      <p class="type-line" data-delay="6300">
-        [Prototype phase; software/hardware], Encoded Mechanical Identification Tags (EMIT) and SFID Transponder AI System, KAIST     </p>
+      <h3 class="type-line" data-delay="2700" data-i18n="prod5_h">>/: Smarthome Symbiotic Metamaterials</h3>
+      <br><p class="type-line" data-delay="3000">
+        <span style="color:var(--yellow)">[Prototype phase · hardware]</span> — Symbiotic Lichen Schwarz Metamaterial (SLSM) and Metafoams (TSMFx), KAIST.
+      </p>
     </section>
 
     <section class="card">
-      <h3 class="type-line" data-delay="5800">
-        Agentic AIJAM-GPT system
-      </h3>
-      <p class="type-line" data-delay="6300">
-        [Prototype phase; software], Agentic AIJAM-GPT system, ONSOFA.ai     </p>
+      <h3 class="type-line" data-delay="3200" data-i18n="prod6_h">>/: SFID Transponder AI System</h3>
+      <br><p class="type-line" data-delay="3500">
+        <span style="color:var(--yellow)">[Prototype phase · software/hardware]</span> — Encoded Mechanical Identification Tags (EMIT) and SFID Transponder AI System, KAIST.
+      </p>
     </section>
 
     <section class="card">
-      <h3 class="type-line" data-delay="6500">
-        AI Conceieger System for Pharmacies
-      </h3>
-      <p class="type-line" data-delay="6700">
-        [Prototype phase; software/Hardware], Multimodal Agentic Skincare Concieger System for Pharmacy, ONSOFA.ai    </section>
+      <h3 class="type-line" data-delay="3700" data-i18n="prod7_h">>/: Agentic AIJAM-GPT System</h3>
+      <br><p class="type-line" data-delay="4000">
+        <span style="color:var(--yellow)">[Prototype phase · software]</span> — Agentic AIJAM-GPT system, ONSOFA.ai.
+      </p>
     </section>
 
     <section class="card">
-      <h3 class="type-line" data-delay="6500">
-        Multimodal Agentic Medica Forensics
-      </h3>
-      <p class="type-line" data-delay="6700">
-        [Prototype phase; software], Multimodal Agentic Medica Forensic, ONSOFA.ai    </section>
+      <h3 class="type-line" data-delay="4200" data-i18n="prod8_h">>/: AI Concierge System for Pharmacies</h3>
+      <br><p class="type-line" data-delay="4500">
+        <span style="color:var(--yellow)">[Prototype phase · software/hardware]</span> — Multimodal Agentic Skincare Concierge System for Pharmacy, ONSOFA.ai.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3 class="type-line" data-delay="4700" data-i18n="prod9_h">>/: Multimodal Agentic Medica Forensics</h3>
+      <br><p class="type-line" data-delay="5000">
+        <span style="color:var(--yellow)">[Prototype phase · software]</span> — Multimodal Agentic Medica Forensic, ONSOFA.ai.
+      </p>
     </section>
 
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p class="type-line" data-delay="3000">
-      © 2026-present 🛋️ ONSOFA.ai – All rights reserved.
-      </p>
+      <p class="type-line" data-delay="2000" data-i18n="footer">© 2025-present 🛋️ ONSOFA.ai – All rights reserved.</p>
     </div>
   </footer>
 
   <script src="typing.js"></script>
+  <script>
+    // floating particles
+    const chars = ['0','1','∇','λ','∑','θ','σ','∂','α','β','π','∞','[4]','>/'];
+    const c = document.getElementById('particles');
+    for (let i = 0; i < 14; i++) {
+      const p = document.createElement('span');
+      p.className = 'particle';
+      p.textContent = chars[Math.floor(Math.random() * chars.length)];
+      p.style.left = Math.random() * 100 + '%';
+      p.style.animationDuration = (10 + Math.random() * 14) + 's';
+      p.style.animationDelay = (-Math.random() * 20) + 's';
+      c.appendChild(p);
+    }
+  </script>
 </body>
 </html>

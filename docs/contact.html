@@ -6,58 +6,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="metadata_images/ONSOFOA-favicon.ico" type="image/x-icon">
-
+  <script src="theme.js"></script>
+  <script src="i18n.js"></script>
 </head>
 <body>
+
   <header class="site-header">
+    <div class="particles" id="particles"></div>
     <div class="container">
-      <h1 class="type-line" data-delay="900">
-        Contact
-      </h1>
-      <p class="type-line" data-delay="1300">
-        🛋️ONOSOFA.ai
-      </p>
+      <h1 class="type-line" data-delay="300">Contact</h1>
+      <p class="type-line" data-delay="900">🛋️ONSOFA.ai</p>
     </div>
   </header>
 
   <nav class="site-nav">
     <div class="container nav-inner">
-      <a class="type-line" data-delay="0" href="index.html">Studio</a>
-      <a class="type-line" data-delay="0" href="projects.html">Projects</a>
-      <a class="type-line" data-delay="0" href="publications.html">Publications</a>
-      <a class="type-line" data-delay="0" href="products.html">Products</a>
-      <a class="type-line" data-delay="0" href="collaborations.html">Collaborations</a>
-      <a class="type-line" data-delay="0" href="contact.html">Contact</a>
+      <a href="index.html" data-i18n="nav_studio">Studio</a>
+      <a href="projects.html" data-i18n="nav_projects">Projects</a>
+      <a href="publications.html" data-i18n="nav_publications">Publications</a>
+      <a href="products.html" data-i18n="nav_products">Products</a>
+      <a href="collaborations.html" data-i18n="nav_collabs">Collaborations</a>
+      <a href="contact.html" data-i18n="nav_contact">Contact</a>
+          <button class="theme-toggle" aria-label="Toggle theme">
+        <span class="toggle-icon">☀️</span>
+        <div class="toggle-track"><div class="toggle-knob"></div></div>
+        <span class="theme-toggle-label">Light</span>
+      </button>
+      <div class="lang-switcher"></div>
     </div>
   </nav>
 
   <main class="container main-content">
-    
-      <h3 class="type-line" data-delay="1400">
-        How to reach?
-      </h3>
-        <ul>
-        <p>on X(Twitter):<a href="https://www.x.com/danielsaatchi">@danielsaatchi</a></p>
-        <p>on🐱GitHub:<a href="https://github.com/danielsaatchi">@danielsaatchi</a></p>
-        <p class="type-line" data-delay="1500">
-        on🦞Moltbook: "DS461" AI agent</p><br>
-        <p class="type-line" data-delay="1600">
-        on📱Whatsapp/Direct: +98‑935-946-7266</p><br>
-        <p class="type-line" data-delay="1800">
-        on📍map: On sofa🛋️ in coffeeshops☕️💻 between Faculty of Computer Science & Faculty of Entrepreneruship📈, University of Tehran, Tehran, Iran</p>
-        <ul>
 
+    <div class="chapter-marker">
+      <span>Reach Out</span><span class="chapter-line"></span><span>How to find DS</span>
+    </div>
+
+    <section class="card">
+      <h3 class="type-line" data-delay="700" data-i18n="contact_h">How to reach?</h3>
+
+      <div class="contact-item">
+        <span class="contact-label">X (Twitter)</span>
+        <span class="contact-value"><a href="https://www.x.com/danielsaatchi" target="_blank">@danielsaatchi</a></span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">🐱 GitHub</span>
+        <span class="contact-value"><a href="https://github.com/danielsaatchi" target="_blank">@danielsaatchi</a></span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">🦞 Moltbook</span>
+        <span class="contact-value">"DS461" AI agent</span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">📱 WhatsApp / Direct</span>
+        <span class="contact-value">+98‑935‑946‑7266</span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">📍 Location</span>
+        <span class="contact-value" data-i18n="contact_loc_val">
+          On sofa 🛋️ in coffeeshops ☕ 💻 between Faculty of Computer Science &amp; Faculty of Entrepreneurship 📈, University of Tehran, Tehran, Iran
+        </span>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:2rem;">
+      <h3 class="type-line" data-delay="1200" data-i18n="social_h">Social &amp; Academic</h3>
+      <div class="social-links" style="margin-top:0.75rem;">
+        <a href="https://x.com/danielsaatchi" target="_blank">X/Twitter</a>
+        <a href="https://scholar.google.com/citations?user=Uv7KQxEAAAAJ&hl=en" target="_blank">Google Scholar</a>
+        <a href="https://github.com/danielsaatchi/" target="_blank">GitHub</a>
+      </div>
+    </section>
 
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p class="type-line" data-delay="2300">
-        © 2026-present 🛋️ ONSOFA.ai – All rights reserved.
-      </p>
+      <p class="type-line" data-delay="2000" data-i18n="footer">© 2025-present 🛋️ ONSOFA.ai – All rights reserved.</p>
     </div>
   </footer>
 
   <script src="typing.js"></script>
+  <script>
+    // floating particles
+    const chars = ['0','1','∇','λ','∑','θ','σ','∂','α','β','π','∞','[4]','>/'];
+    const c = document.getElementById('particles');
+    for (let i = 0; i < 14; i++) {
+      const p = document.createElement('span');
+      p.className = 'particle';
+      p.textContent = chars[Math.floor(Math.random() * chars.length)];
+      p.style.left = Math.random() * 100 + '%';
+      p.style.animationDuration = (10 + Math.random() * 14) + 's';
+      p.style.animationDelay = (-Math.random() * 20) + 's';
+      c.appendChild(p);
+    }
+  </script>
 </body>
 </html>

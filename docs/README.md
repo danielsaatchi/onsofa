@@ -4,23 +4,15 @@ This is a simple multi-page website that demonstrates a ChatGPT-style typing
 animation. All key text elements (headers, navigation links, paragraphs, and
 some form elements) are animated from left to right.
 
-## Repository layout
+## Files
 
-```
-onsofa/docs/
-├── index.html                 # Home page (main page)
-├── projects.html              # Projects page
-├── publications.html          # Publications page
-├── products.html              # Products page
-├── contact.html               # Contact-us page
-├── style.css                  # All CSS rules
-├── typing.js                  # Typing animation logic
-├── style.css                  # All CSS rules
-├── README.md                  # Instruction
-├── CODE_OF_CONDUCT.md         # open-source note
-└── fonts/
-    └── CascadiaCode-Regular.woff2   # Optional – if not from URL (check .css file)
-```
+- `index.html` – Home page
+- `projects.html` – Projects page
+- `publications.html` – Publications page
+- `products.html` – Products page
+- `contact.html` – Contact page
+- `style.css` – Global styles and layout
+- `typing.js` – Typing animation logic
 
 ## How the Typing Works
 

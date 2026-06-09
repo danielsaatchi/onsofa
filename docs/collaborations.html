@@ -6,150 +6,115 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="metadata_images/ONSOFOA-favicon.ico" type="image/x-icon">
-
+  <script src="theme.js"></script>
+  <script src="i18n.js"></script>
 </head>
 <body>
+
   <header class="site-header">
+    <div class="particles" id="particles"></div>
     <div class="container">
-      <h1 class="type-line" data-delay="700">
-        Collaborations
-      </h1>
-      <p class="type-line" data-delay="1800">
-         in 🛋️ONSOFA.ai
-      </p>
+      <h1 class="type-line" data-delay="300">Collaborations</h1>
+      <p class="type-line" data-delay="900">in 🛋️ONSOFA.ai</p>
     </div>
   </header>
 
   <nav class="site-nav">
     <div class="container nav-inner">
-      <a class="type-line" data-delay="1200" href="index.html">Studio</a>
-      <a class="type-line" data-delay="1400" href="projects.html">Projects</a>
-      <a class="type-line" data-delay="1600" href="publications.html">Publications</a>
-      <a class="type-line" data-delay="1800" href="products.html">Products</a>
-      <a class="type-line" data-delay="1800" href="collaborations.html">Collaborations</a>
-      <a class="type-line" data-delay="2000" href="contact.html">Contact</a>
+      <a href="index.html" data-i18n="nav_studio">Studio</a>
+      <a href="projects.html" data-i18n="nav_projects">Projects</a>
+      <a href="publications.html" data-i18n="nav_publications">Publications</a>
+      <a href="products.html" data-i18n="nav_products">Products</a>
+      <a href="collaborations.html" data-i18n="nav_collabs">Collaborations</a>
+      <a href="contact.html" data-i18n="nav_contact">Contact</a>
+          <button class="theme-toggle" aria-label="Toggle theme">
+        <span class="toggle-icon">☀️</span>
+        <div class="toggle-track"><div class="toggle-knob"></div></div>
+        <span class="theme-toggle-label">Light</span>
+      </button>
+      <div class="lang-switcher"></div>
     </div>
   </nav>
 
   <main class="container main-content">
-    <p class="type-line" data-delay="1400">
-      Collaborating🤝with open-source community, AI/CS/ME/Business/Managements departments at universities, innovation centers, startups studios, accelerators, and angel investors. 
+
+    <p class="type-line" data-delay="600" data-i18n="collab_intro">
+      Collaborating 🤝 with open-source community, AI/CS/ME/Business/Management departments at universities, innovation centers, startup studios, accelerators, and angel investors.
     </p>
+
+    <!-- PRESENT -->
+    <div class="chapter-marker" style="margin-top:2rem">
+      <span>01</span><span class="chapter-line"></span>
+      <span style="color:orange;">Present</span>
+    </div>
+
     <section class="card">
-       <h3 class="type-line" data-delay="2800">
-        <strong style="color: orange;">Present </strong>
-       </h3>
+      <h2 class="type-line" data-delay="800" style="color:orange;">Present</h2>
       <ul>
-      <p class="type-line" data-delay="2800">
-        >/: Opensource AI Community and Microsoft GitHub, Global
-      </p><br>
-      <p class="type-line" data-delay="2900">
-        >/: Concussion Community and Traumatic Brain Injury (TBI) Community, Global
-      </p><br>
-      <p class="type-line" data-delay="3100">
-        >/: Apple Development Programme, Apple Developers, USA
-      </p><br>
-      <p class="type-line" data-delay="3300">
-        >/: Korea Advanced Institute of Science and Technology (KAIST), Startups Studio, ME/CS/AI/CT/ID/BioBrain departments, South Korea
-      </p><br>
-        <p class="type-line" data-delay="3500">
-        >/: University of Oxford, Responsible Tech Alumni Group, Innovation/Entrepreneruship Centers, Said Business School & CS Department, England, UK
-      </p><br>
-     </p>
-        <p class="type-line" data-delay="3700">
-        >/: Stanford University, (SAIL Labs) CS Department and Stanford Center for Professional Developments (Angel Investors), USA
-      </p><br>
-      </p>
-        <p class="type-line" data-delay="3900">
-        >/: Georgia-Tech Institute, ME/CS departments, USA
-      </p><br>    
-        <p class="type-line" data-delay="4100">
-        >/: Michigan Technological University, EE/CS departments, USA
-      </p><br>  
-        <p class="type-line" data-delay="4300">
-        >/: University of Toronto, CS/ME Departments and Faculty of Music, Canada
-      </p><br>  
-        <p class="type-line" data-delay="4500">
-        >/: Swiss School of Business and Management, Switzerland
-      </p><br>  
-        <p class="type-line" data-delay="4700">
-        >/: Swiss Biotechnology Institute, Switzerland
-      </p><br>  
-        <p class="type-line" data-delay="4900">
-        >/: National Health System (NHS) and AI Workspace for Telemedicine/Digital Health, England
-      </p><br> 
-        <p class="type-line" data-delay="5100">
-        >/: University of Tehran, Faculties of Entrepreneurship & Managements & Faculty of CS/ME, Iran
-      </p><br>  
-       <p class="type-line" data-delay="5200">
-        >/: XSEALD Studio [4] Technology Design and Trauma Telemedicine AI Systems
-      </p><br> 
-       <p class="type-line" data-delay="5300">
-        >/: DAATCHI Studio [4] Fashion-Technology Design
-      </p><br>
-        <p class="type-line" data-delay="5400">
-        >/: ATINNITUS Metal Band and Music Studios
-      </p><br>
-        <p class="type-line" data-delay="5500">
-        >/: DANIEL SAATCHI DESIGNS & TECHNOLOGIES (DSDT)
-      </p><br>
-        <p class="type-line" data-delay="5600">
-        >/: AIJAM, Artificial Intelligence Journal of Academic-Nonsense-Arts & Metascience
-      </p><br>
-      <ul>
-  
+        <li class="type-line" data-delay="1000">>/: Opensource AI Community and Microsoft GitHub, Global</li><br>
+        <li class="type-line" data-delay="1150">>/: Concussion Community and Traumatic Brain Injury (TBI) Community, Global</li><br>
+        <li class="type-line" data-delay="1300">>/: Apple Development Programme, Apple Developers, USA</li><br>
+        <li class="type-line" data-delay="1450">>/: Korea Advanced Institute of Science and Technology (KAIST) — Startups Studio, ME/CS/AI/CT/ID/BioBrain departments, South Korea</li><br>
+        <li class="type-line" data-delay="1600">>/: University of Oxford — Responsible Tech Alumni Group, Innovation/Entrepreneurship Centers, Saïd Business School &amp; CS Department, England, UK</li><br>
+        <li class="type-line" data-delay="1750">>/: Stanford University — (SAIL Labs) CS Department and Stanford Center for Professional Developments (Angel Investors), USA</li><br>
+        <li class="type-line" data-delay="1900">>/: Georgia-Tech Institute, ME/CS departments, USA</li><br>
+        <li class="type-line" data-delay="2050">>/: Michigan Technological University, EE/CS departments, USA</li><br>
+        <li class="type-line" data-delay="2200">>/: University of Toronto, CS/ME Departments and Faculty of Music, Canada</li><br>
+        <li class="type-line" data-delay="2350">>/: Swiss School of Business and Management, Switzerland</li><br>
+        <li class="type-line" data-delay="2500">>/: Swiss Biotechnology Institute, Switzerland</li><br>
+        <li class="type-line" data-delay="2650">>/: National Health System (NHS) and AI Workspace for Telemedicine/Digital Health, England</li><br>
+        <li class="type-line" data-delay="2800">>/: University of Tehran, Faculties of Entrepreneurship &amp; Management &amp; Faculty of CS/ME, Iran</li><br>
+        <li class="type-line" data-delay="2950">>/: XSEALD Studio [4] Technology Design and Trauma Telemedicine AI Systems</li><br>
+        <li class="type-line" data-delay="3100">>/: DAATCHI Studio [4] Fashion-Technology Design</li><br>
+        <li class="type-line" data-delay="3250">>/: ATINNITUS Metal Band and Music Studios</li><br>
+        <li class="type-line" data-delay="3400">>/: DANIEL SAATCHI DESIGNS &amp; TECHNOLOGIES (DSDT)</li><br>
+        <li class="type-line" data-delay="3550">>/: AIJAM, Artificial Intelligence Journal of Academic-Nonsense-Arts &amp; Metascience</li><br>
+      </ul>
     </section>
 
+    <!-- PAST -->
+    <div class="chapter-marker" style="margin-top:3rem">
+      <span>02</span><span class="chapter-line"></span>
+      <span style="color:#ff5555;">Past</span>
+    </div>
 
-      <section class="card">
-       <h3 class="type-line" data-delay="4100">
-        <strong style="color: red;">Past</strong>
-       </h3>
+    <section class="card">
+      <h2 class="type-line" data-delay="3700" style="color:#ff5555;">Past</h2>
       <ul>
-      <p class="type-line" data-delay="4300">
-        >/: Marie Skłodowska-Curie Actions (MSCA) Programme for Artifcial Intelligence, ALLIES, Spain and European Commission
-      </p><br>
-      <p class="type-line" data-delay="4500">
-        >/: Spanish Natioanal Research Council, Consejo Superior de Investigaciones Científicas (CSIC), Spain
-      </p><br>
-      <p class="type-line" data-delay="4700">
-        >/: Artificial Intelligence Research Institute of Barcelona, CSIC-IIIA, Spain
-      </p><br>
-        <p class="type-line" data-delay="4900">
-        >/: National Center for Biotechnology, Centro Nacional de Biotecnología (CSIC-CIB), Spain
-      </p><br>
-     </p>
-        <p class="type-line" data-delay="5100">
-        >/: Material Science Insitute of Madrid, instituto de Ciencia de Materials de Madrid (CSIC-ICMM), Spain
-      </p><br>
-      </p>
-        <p class="type-line" data-delay="5300">
-        >/: University of Manchester, NHS AI and Digital Health, England, UK
-      </p><br>    
-        <p class="type-line" data-delay="5500">
-        >/: Tehran Univesity Medical School, Iran
-      </p><br>  
-        <p class="type-line" data-delay="5700">
-        >/: University of Tehran, ME/EE/Civil Departments, Iran
-      </p><br>  
-        <p class="type-line" data-delay="5900">
-        >/: K. N. Toosi University of Technology, AE/ME departments, Iran
-      </p>
-      <ul>
-  
+        <li class="type-line" data-delay="3900">>/: Marie Skłodowska-Curie Actions (MSCA) Programme for Artificial Intelligence, ALLIES, Spain and European Commission</li><br>
+        <li class="type-line" data-delay="4050">>/: Spanish National Research Council, Consejo Superior de Investigaciones Científicas (CSIC), Spain</li><br>
+        <li class="type-line" data-delay="4200">>/: Artificial Intelligence Research Institute of Barcelona, CSIC-IIIA, Spain</li><br>
+        <li class="type-line" data-delay="4350">>/: National Center for Biotechnology, Centro Nacional de Biotecnología (CSIC-CIB), Spain</li><br>
+        <li class="type-line" data-delay="4500">>/: Material Science Institute of Madrid, Instituto de Ciencia de Materiales de Madrid (CSIC-ICMM), Spain</li><br>
+        <li class="type-line" data-delay="4650">>/: University of Manchester, NHS AI and Digital Health, England, UK</li><br>
+        <li class="type-line" data-delay="4800">>/: Tehran University Medical School, Iran</li><br>
+        <li class="type-line" data-delay="4950">>/: University of Tehran, ME/EE/Civil Departments, Iran</li><br>
+        <li class="type-line" data-delay="5100">>/: K. N. Toosi University of Technology, AE/ME departments, Iran</li><br>
+      </ul>
     </section>
-
 
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p class="type-line" data-delay="5800">
-         © 2026-present 🛋️ ONSOFA.ai – All rights reserved.
-      </p>
+      <p class="type-line" data-delay="2000" data-i18n="footer">© 2025-present 🛋️ ONSOFA.ai – All rights reserved.</p>
     </div>
   </footer>
 
   <script src="typing.js"></script>
+  <script>
+    // floating particles
+    const chars = ['0','1','∇','λ','∑','θ','σ','∂','α','β','π','∞','[4]','>/'];
+    const c = document.getElementById('particles');
+    for (let i = 0; i < 14; i++) {
+      const p = document.createElement('span');
+      p.className = 'particle';
+      p.textContent = chars[Math.floor(Math.random() * chars.length)];
+      p.style.left = Math.random() * 100 + '%';
+      p.style.animationDuration = (10 + Math.random() * 14) + 's';
+      p.style.animationDelay = (-Math.random() * 20) + 's';
+      c.appendChild(p);
+    }
+  </script>
 </body>
 </html>

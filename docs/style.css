@@ -1,224 +1,479 @@
-/* ==== Base styles ==== */
+/* =========================================================
+   ONSOFA.ai — Style Sheet
+   Dark editorial × terminal aesthetic + Light mode
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap');
 
 @font-face {
-    font-family: 'Cascadia Code';
-    src: url('https://cdn.jsdelivr.net/gh/tonsky.cascadia-code/1.10.1/CascadiaCode-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Cascadia Code';
+  src: url('https://cdn.jsdelivr.net/gh/microsoft/cascadia-code@latest/build/woff2/CascadiaCode-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
-:root {
-    --yellow:    #ffcc00;
-    --black:     #000;
-    --dark:      #333;
-    --link-blue: #007bff;   /* classic bootstrap‑style blue */
-    --bg-default: #fff; /* White background */
-    --text-default: var(--black); /* Black text */
-    --nav-text: var(--black); /* Black for nav links */
-    --footer-bg: var(--dark); /* Dark grey for footer */
-    --footer-text: #fff; /* White for footer text */
+/* ── Dark theme (default) ── */
+:root,
+[data-theme="dark"] {
+  --accent:      #ffcc00;
+  --accent-dim:  rgba(255,204,0,0.12);
+  --accent-glow: rgba(255,204,0,0.35);
+  --ink:         #0a0a0c;
+  --ink2:        #111116;
+  --ink3:        #1a1a22;
+  --text:        #e8e6df;
+  --muted:       #7a7875;
+  --border:      rgba(255,204,0,0.15);
+  --border-sub:  rgba(255,255,255,0.04);
+  --card-bg:     #111116;
+  --card-hover:  #1a1a22;
+  --nav-bg:      #0a0a0c;
+  --footer-bg:   #111116;
+  --particle-c:  rgba(255,204,0,0.2);
+  --grid-line:   rgba(255,204,0,0.04);
+  --noise-op:    0.022;
+  --card-border-l: rgba(255,204,0,0.4);
+  --toggle-bg:   #1a1a22;
+  --toggle-knob: #ffcc00;
+  --toggle-icon-d: '☀️';
+  --toggle-icon-l: '🌙';
+  --link:        #ffcc00;
 }
 
-* {
-    box-sizing: border-box;
+/* ── Light theme ── */
+[data-theme="light"] {
+  --accent:      #c49a00;
+  --accent-dim:  rgba(196,154,0,0.1);
+  --accent-glow: rgba(196,154,0,0.25);
+  --ink:         #f5f2ea;
+  --ink2:        #ede9df;
+  --ink3:        #e4dfd2;
+  --text:        #1a1814;
+  --muted:       #7a7060;
+  --border:      rgba(196,154,0,0.25);
+  --border-sub:  rgba(0,0,0,0.06);
+  --card-bg:     #ede9df;
+  --card-hover:  #e4dfd2;
+  --nav-bg:      #f5f2ea;
+  --footer-bg:   #ede9df;
+  --particle-c:  rgba(26, 141, 198, 0.936);
+  --grid-line:   rgba(196,154,0,0.07);
+  --noise-op:    0.015;
+  --card-border-l: rgba(196,154,0,0.6);
+  --toggle-bg:   #ede9df;
+  --toggle-knob: #c49a00;
+  --link:        #9a7800;
 }
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
 
 body {
-    font-family: 'Cascadia Code', monospace;
-    margin: 0;
-    background: var(--bg-default);
-    color: var(--text-default);
-    line-height: 1.6;
+  font-family: 'Cascadia Code', 'Courier New', monospace;
+  background: var(--ink);
+  color: var(--text);
+  line-height: 1.7;
+  overflow-x: hidden;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* --- Global link style (everything but the menu) --- */
-a {
-    color: var(--link-blue);
-    text-decoration: none;
+/* ── Noise grain overlay ── */
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  opacity: var(--noise-op);
+  pointer-events: none;
+  z-index: 1000;
 }
-a:hover {
-    text-decoration: underline;
-}
 
-
-/* ==== Layout ==== */
-
+/* ── Layout ── */
 .container {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
+.main-content { padding: 3rem 0 5rem; }
 
-.main-content {
-    padding: 2rem 0 3rem;
-}
+/* ── Links ── */
+a { color: var(--link); text-decoration: none; transition: opacity 0.2s; }
+a:hover { opacity: 0.72; text-decoration: underline; }
 
-/* Header */
+/* ── Header ── */
 .site-header {
-    background: var(--yellow);
-    color: var(--black);
-    padding: 1rem;
-    text-align: center;
-    border-bottom: 1px solid var(--dark); /* Subtle separator */
+  background: var(--ink2);
+  border-bottom: 1px solid var(--border);
+  padding: 2rem 0 1.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s ease;
 }
-
+.site-header::after {
+  content: '';
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 20%, transparent 80%);
+  pointer-events: none;
+}
+.site-header .container { position: relative; z-index: 1; }
 .site-header h1 {
-    margin: 0 0 0.75rem;
-    letter-spacing: -0.04em;
+  font-family: 'Cascadia Code', monospace;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: normal;
+  letter-spacing: -0.03em;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+  text-shadow: 0 0 40px var(--accent-glow);
+  transition: color 0.3s, text-shadow 0.3s;
+}
+.site-header p {
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  color: var(--muted);
+  text-transform: uppercase;
 }
 
-/* Navigation */
+/* ── Navigation ── */
 .site-nav {
-    background: #fff; /* White background for nav */
-    border-bottom: 1px solid var(--dark);
+  background: var(--nav-bg);
+  border-bottom: 1px solid var(--border);
+  position: sticky; top: 0; z-index: 500;
+  transition: background 0.3s ease;
 }
-
 .nav-inner {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    align-items: center;
-    padding: 0.75rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.75rem;
+  padding: 0.85rem 0;
 }
-
 .site-nav a {
-    font-weight: bold;
-    color: var(--nav-text); /* Black for nav links */
-    text-decoration: none;
-    position: relative;
-    padding-bottom: 0.2rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 0.2rem;
+  transition: color 0.25s;
 }
-
+.site-nav a:hover { color: var(--accent); text-decoration: none; }
 .site-nav a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 0;
-    background: var(--link-blue); /* Blue underline on hover */
-    transition: width 0.24s ease-out;
+  content: '';
+  position: absolute; left: 0; bottom: 0;
+  height: 1px; width: 0;
+  background: var(--accent);
+  transition: width 0.25s ease-out;
+}
+.site-nav a:hover::after { width: 100%; }
+
+/* ── Theme Toggle ── */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  cursor: pointer;
+  margin-left: 0.75rem;
+  user-select: none;
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+.theme-toggle-label {
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-family: 'Cascadia Code', monospace;
+  transition: color 0.3s;
+}
+.toggle-track {
+  width: 34px; height: 18px;
+  background: var(--accent-dim);
+  border: none;
+  border-radius: 9px;
+  position: relative;
+  transition: background 0.3s;
+  box-shadow: inset 0 0 0 1px var(--accent-dim);
+}
+.toggle-knob {
+  position: absolute;
+  top: 2px; left: 2px;
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 6px var(--accent-glow);
+  transition: transform 0.25s ease, background 0.3s, box-shadow 0.3s;
+}
+[data-theme="light"] .toggle-knob {
+  transform: translateX(16px);
+}
+.toggle-icon {
+  font-size: 0.8rem;
+  line-height: 1;
 }
 
-.site-nav a:hover::after {
-    width: 100%;
-}
-
-/* Cards / Sections */
+/* ── Cards ── */
 .card {
-    background: #f8f9fa; /* Light grey background for cards */
-    border-radius: 10px; /* Slightly rounded corners */
-    border: 1px solid var(--dark); /* Dark grey border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow */
-    padding: 1.75rem 1.6rem;
-    margin-top: 1.5rem;
-    position: relative;
-    overflow: hidden;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--card-border-l);
+  padding: 2rem 1.75rem;
+  margin-top: 1.5rem;
+  position: relative;
+  transition: border-color 0.3s, background 0.3s;
 }
-
+.card:hover { background: var(--card-hover); }
 .card h2 {
-    margin: 0 0 0.75rem;
-    font-size: 1.45rem;
-    color: var(--black);
+  font-family: 'Cascadia Code', monospace;
+  font-size: 1rem; font-weight: normal;
+  color: var(--accent); margin-bottom: 1rem; letter-spacing: 0.05em;
+}
+.card h3 {
+  font-family: 'Cascadia Code', monospace;
+  font-size: 0.85rem; font-weight: normal;
+  color: var(--accent); margin-bottom: 0.75rem; letter-spacing: 0.05em;
+}
+.card h4 {
+  font-family: 'Cascadia Code', monospace;
+  font-size: 0.75rem; color: var(--muted);
+  letter-spacing: 0.1em; text-transform: uppercase;
+  margin: 1.25rem 0 0.5rem;
+}
+.card p { font-size: 0.82rem; color: var(--text); line-height: 1.75; }
+.card ul { list-style: none; padding: 0; }
+.card ul li {
+  font-size: 0.8rem; color: var(--text); line-height: 1.8;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border-sub);
+}
+.card ul li:last-child { border-bottom: none; }
+
+.main-content > p {
+  font-size: 0.82rem; color: var(--muted);
+  margin-bottom: 1.5rem; letter-spacing: 0.02em;
+}
+.main-content > h3 {
+  font-family: 'Cascadia Code', monospace;
+  font-size: 0.75rem; color: var(--muted);
+  letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1.5rem;
 }
 
-.card p {
-    margin: 0.3rem 0;
-    line-height: 1.6;
-    color: var(--dark); /* Dark grey for card text */
+/* ── Chapter marker ── */
+.chapter-marker {
+  display: flex; align-items: center; gap: 1rem;
+  font-size: 0.6rem; letter-spacing: 0.25em;
+  text-transform: uppercase; color: var(--accent);
+  margin-bottom: 2.5rem; margin-top: 1rem;
+}
+.chapter-line {
+  flex: 1; height: 1px;
+  background: linear-gradient(to right, var(--card-border-l), transparent);
 }
 
-/* Footer */
+/* ── Footer ── */
 .site-footer {
-    background: var(--footer-bg);
-    color: var(--footer-text);
-    padding: 1.2rem 0 1.8rem;
-    margin-top: 2rem;
-    text-align: center;
-    font-size: 0.9rem;
+  background: var(--footer-bg);
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0 2rem; margin-top: 4rem;
+  text-align: center;
+  font-size: 0.65rem; letter-spacing: 0.15em;
+  color: var(--muted); text-transform: uppercase;
+  transition: background 0.3s;
 }
 
-/* Contact form */
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    margin-top: 0.75rem;
-}
-
-.contact-form label {
-    font-size: 0.9rem;
-    color: var(--dark); /* Dark grey for labels */
-}
-
-.contact-form input,
-.contact-form textarea {
-    background: #fff; /* White background for inputs */
-    border-radius: 8px; /* Rounded inputs */
-    border: 1px solid var(--dark); /* Dark grey border */
-    padding: 0.6rem 0.75rem;
-    color: var(--black); /* Black text */
-    font-family: inherit;
-    font-size: 0.95rem;
-}
-
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-    color: rgba(51, 51, 51, 0.7); /* Dark grey placeholder */
-}
-
-.contact-form button {
-    align-self: flex-start;
-    margin-top: 0.5rem;
-    padding: 0.55rem 1.4rem;
-    border-radius: 20px; /* Pill-shaped button */
-    border: none;
-    background: var(--link-blue); /* Blue button */
-    color: #fff; /* White text on button */
-    font-weight: 600;
-    font-size: 0.95rem;
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3); /* Blue shadow */
-}
-
-/* ==== Typing animation styles ==== */
-.type-line {
-    display: inline-block;
-    white-space: pre-wrap;
-    min-height: 1em;
-}
-
+/* ── Typing animation ── */
+.type-line { display: inline-block; white-space: pre-wrap; min-height: 1em; }
 .typing-cursor {
-    display: inline-block;
-    margin-left: 1px;
-    color: var(--link-blue); /* Blue cursor */
-    animation: blink 0.8s steps(1) infinite;
+  display: inline-block; margin-left: 1px;
+  color: var(--accent);
+  animation: blink 0.8s steps(1) infinite;
 }
-
 @keyframes blink {
-    0%, 50% { opacity: 1; }
-    50.01%, 100% { opacity: 0; }
+  0%, 50%      { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
 }
 
-/* Responsive tweaks */
+/* ── Hero orbs ── */
+.hero-orb {
+  position: absolute; border-radius: 50%;
+  pointer-events: none;
+  animation: orb-pulse 6s ease-in-out infinite;
+}
+.hero-orb-1 {
+  width: 400px; height: 400px; top: -60px; right: -80px;
+  background: radial-gradient(circle, var(--accent-dim) 0%, transparent 70%);
+  filter: blur(60px);
+}
+.hero-orb-2 {
+  width: 300px; height: 300px; bottom: -40px; left: -60px;
+  background: radial-gradient(circle, var(--accent-dim) 0%, transparent 70%);
+  filter: blur(60px); animation-delay: -3s;
+}
+@keyframes orb-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50%       { transform: scale(1.12); opacity: 1; }
+}
+
+/* ── Particles ── */
+.particles { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.particle {
+  position: absolute; font-family: 'Cascadia Code', monospace; font-size: 0.5rem;
+  color: var(--particle-c);
+  animation: drift linear infinite;
+}
+@keyframes drift {
+  from  { transform: translateY(110%); opacity: 0; }
+  10%   { opacity: 1; }
+  90%   { opacity: 0.2; }
+  to    { transform: translateY(-60px); opacity: 0; }
+}
+
+/* ── Social links ── */
+.social-links { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 0.75rem; }
+.social-links a {
+  font-size: 0.7rem; letter-spacing: 0.1em;
+  color: var(--accent);
+  border: 1px solid var(--border);
+  padding: 0.35rem 0.9rem;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+.social-links a:hover { background: var(--accent-dim); text-decoration: none; opacity: 1; }
+
+/* ── Contact items ── */
+.contact-item {
+  display: flex; gap: 1rem; align-items: baseline;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--border-sub);
+  font-size: 0.8rem;
+}
+.contact-item:last-child { border-bottom: none; }
+.contact-label {
+  min-width: 160px; color: var(--muted);
+  font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase;
+}
+.contact-value { color: var(--text); }
+
+/* ── Responsive ── */
 @media (max-width: 640px) {
-    .site-header h1 {
-        font-size: 1.9rem;
-    }
-
-    .nav-inner {
-        flex-wrap: wrap;
-        row-gap: 0.35rem;
-        justify-content: center; /* Center nav items on small screens */
-    }
-
-    .card {
-        padding: 1.4rem 1.25rem;
-    }
-
-    main {
-        padding: 1.5rem; /* Adjust main padding for smaller screens */
-    }
+  .site-header h1 { font-size: 2rem; }
+  .nav-inner { gap: 0.5rem 1.25rem; }
+  .card { padding: 1.5rem 1.25rem; }
+  .main-content { padding: 2rem 0 3rem; }
+  .theme-toggle-label { display: none; }
 }
+
+/* ── Language Switcher ── */
+/* ── Language Dropdown ── */
+.lang-switcher {
+  position: relative;
+  margin-left: 0.75rem;
+  flex-shrink: 0;
+}
+
+/* The trigger pill — shows current language */
+.lang-trigger {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0.3rem 0.55rem;
+  cursor: pointer;
+  font-family: 'Cascadia Code', monospace;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.lang-trigger:hover { background: var(--accent-dim); }
+.lang-trigger .lang-flag { font-size: 0.85rem; line-height: 1; }
+.lang-trigger .lang-code {
+  font-size: 0.55rem;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+.lang-caret {
+  font-size: 0.45rem;
+  color: var(--muted);
+  transition: transform 0.22s ease;
+  line-height: 1;
+  margin-left: 1px;
+}
+.lang-switcher.open .lang-caret { transform: rotate(180deg); }
+
+/* The dropdown panel — vertical stack */
+.lang-dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  background: var(--ink2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-width: 90px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  opacity: 0;
+  transform: translateY(-6px) scale(0.97);
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+  z-index: 999;
+}
+.lang-switcher.open .lang-dropdown {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: all;
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0.55rem 0.85rem;
+  cursor: pointer;
+  font-family: 'Cascadia Code', monospace;
+  text-align: left;
+  transition: background 0.15s;
+  border-bottom: 1px solid var(--border-sub);
+}
+.lang-btn:last-child { border-bottom: none; }
+.lang-btn:hover { background: var(--accent-dim); }
+.lang-btn.active { background: var(--accent-dim); }
+.lang-btn .lang-flag { font-size: 0.82rem; line-height: 1; }
+.lang-btn .lang-code {
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+.lang-btn.active .lang-code { color: var(--accent); }
+.lang-btn .lang-name {
+  font-size: 0.58rem;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+}
+.lang-btn.active .lang-name { color: var(--text); }
+
+/* ── RTL support (Persian) ── */
+[dir="rtl"] body { font-family: 'Cascadia Code', Tahoma, sans-serif; }
+[dir="rtl"] .nav-inner { flex-direction: row-reverse; }
+[dir="rtl"] .chapter-line { background: linear-gradient(to left, var(--card-border-l), transparent); }
+[dir="rtl"] .card { border-left: none; border-right: 2px solid var(--card-border-l); }
+[dir="rtl"] .contact-item { flex-direction: row-reverse; text-align: right; }
+[dir="rtl"] .site-header { direction: rtl; }
+[dir="rtl"] .card ul li { text-align: right; }

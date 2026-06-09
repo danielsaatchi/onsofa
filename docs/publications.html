@@ -6,315 +6,276 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="metadata_images/ONSOFOA-favicon.ico" type="image/x-icon">
-
+  <script src="theme.js"></script>
+  <script src="i18n.js"></script>
 </head>
 <body>
+
   <header class="site-header">
+    <div class="particles" id="particles"></div>
     <div class="container">
-      <h1 class="type-line" data-delay="1200">
-        Publications
-      </h1>
-      <p class="type-line" data-delay="1700">
-        by 🛋️ONSOFA.ai
-      </p>
+      <h1 class="type-line" data-delay="300">Publications</h1>
+      <p class="type-line" data-delay="900">by 🛋️ONSOFA.ai</p>
     </div>
   </header>
 
   <nav class="site-nav">
     <div class="container nav-inner">
-      <a class="type-line" data-delay="0" href="index.html">Studio</a>
-      <a class="type-line" data-delay="0" href="projects.html">Projects</a>
-      <a class="type-line" data-delay="0" href="publications.html">Publications</a>
-      <a class="type-line" data-delay="0" href="products.html">Products</a>
-      <a class="type-line" data-delay="0" href="collaborations.html">Collaborations</a>
-      <a class="type-line" data-delay="0" href="contact.html">Contact</a>
+      <a href="index.html" data-i18n="nav_studio">Studio</a>
+      <a href="projects.html" data-i18n="nav_projects">Projects</a>
+      <a href="publications.html" data-i18n="nav_publications">Publications</a>
+      <a href="products.html" data-i18n="nav_products">Products</a>
+      <a href="collaborations.html" data-i18n="nav_collabs">Collaborations</a>
+      <a href="contact.html" data-i18n="nav_contact">Contact</a>
+          <button class="theme-toggle" aria-label="Toggle theme">
+        <span class="toggle-icon">☀️</span>
+        <div class="toggle-track"><div class="toggle-knob"></div></div>
+        <span class="theme-toggle-label">Light</span>
+      </button>
+      <div class="lang-switcher"></div>
     </div>
   </nav>
 
   <main class="container main-content">
 
+    <!-- JOURNALS -->
+    <div class="chapter-marker">
+      <span>01</span><span class="chapter-line"></span>
+      <span style="color:#ff6b35;" data-i18n="pub_ch1_label">Journals / Preprints</span>
+    </div>
+
     <section class="card">
-      <h2 class="type-line" data-delay="1800">
-        <strong style="color: red;">Jorunals / Preprints</strong>
-      </h2>
-      <p class="type-line" data-delay="2400">
-         <ul> 
-        <li>(2026) <strong style="color: orange;">Daniel Saatchi</strong>,
-        <strong style="font-style: italic;">"Open Rebuttal to Nature Article: ‘Why Sky-High Pay for AI Researchers is Bad for the Future of Science’"</strong>,
-                Microsoft GitHub, Open Rebuttal to Nature Publication, February 18, 2026.
-                <a href="https://github.com/danielsaatchi/Open-Rebuttal-to-Nature-Article-Why-Sky-High-Pay-for-AI-Researchers-is-Bad-for-the-Future-of-Science" target="_blank">
-        https://github.com/danielsaatchi/Open-Rebuttal-to-Nature-Article-Why-Sky-High-Pay-for-AI-Researchers-is-Bad-for-the-Future-of-Science
-        </a>
+      <h2 class="type-line" data-delay="600" style="color:#ff6b35;">Journals / Preprints</h2>
+      <ul>
+        <li>
+          <strong style="color:var(--yellow)">(2026)</strong>
+          <strong style="color:orange">Daniel Saatchi</strong>,
+          <em>"Open Rebuttal to Nature Article: 'Why Sky-High Pay for AI Researchers is Bad for the Future of Science'"</em>,
+          Microsoft GitHub, Open Rebuttal to Nature Publication, February 18, 2026.<br>
+          <a href="https://github.com/danielsaatchi/Open-Rebuttal-to-Nature-Article-Why-Sky-High-Pay-for-AI-Researchers-is-Bad-for-the-Future-of-Science" target="_blank">↗ GitHub</a>
         </li>
-
-        
-        <li>(2026) <strong style="color: orange;">Daniel Saatchi</strong>,
-            <strong style="font-style: italic;">"AI Research Ethics: Discommendation for European Institutional Responsibilities under Marie Skłodowska-Curie Actions"</strong>,
-                Microsoft GitHub, Preprint for Journal of Artificial Intelligence, January 31, 2026.
-                <a href="https://github.com/danielsaatchi/msca-ai-discommend-for-european-hosts-ethics" target="_blank">
-                    https://github.com/danielsaatchi/msca-ai-discommend-for-european-hosts-ethics</a></li>
-
-        
-        <li>(2025)  <strong style="color: orange;">Daniel Saatchi</strong>, Myung-Joon Lee, Tushar Prashant Pandit, Manmatha Mahato, Il-Kwon Oh,
-            <strong style="font-style: italic;">"Artificial Intelligence in Metamaterial Informatics for Sonic Frequency Mechanical Identification Tags”</strong>,
-                Advanced Functional Materials, AI-discovery, SFID AI-chip Invention,
-                <a href="https://doi.org/10.1002/adfm.202414670" target="_blank">https://doi.org/10.1002/adfm.202414670</a>
-                    </strong></li>
-
-        <li>(2025)  <strong style="color: orange;">Daniel Saatchi</strong>, Myung-Joon Lee, Tushar Prashant Pandit, Manmatha Mahato, Il-Kwon Oh,
-            <strong style="font-style: italic;">"Artificial Intelligence in Metamaterial Informatics for Sonic Frequency Mechanical Identification Tags”</strong>,
-                Advanced Functional Materials, 202414760, Opensource algorithms, 2019-2024 Data Contribution,
-                <a href="https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fadfm.202414670&file=adfm202414670-sup-0001-SuppMat.docx  " target="_blank">https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fadfm.202414670&file=adfm202414670-sup-0001-SuppMat.docx  </a>
-                    </strong>, AI/MI/data/codes for SFID/EMIT on GitHub:<a href="https://github.com/danielsaatchi/EMIT" target="_blank">https://github.com/danielsaatchi/EMIT  </a> </li>
-            <li>(2024) Mannan Khan, Saewoong Oh, Wonhee Ji, Tae-Eung Song, Manmatha Mahato, <strong style="color: orange;">Daniel Saatchi</strong>, Jaewoo Roh, Donghyeok Yun, Jee-Hwan Ryu, and Il-Kwon Oh,
-                <strong style="font-style: italic;">"Wearable Haptics for Orthotropic Actuation based on Perpendicularly Nested Auxetic SMA Knotting”</strong>,
-                    Advanced Materials,
-                    <a href="https://doi.org/10.1002/adma.202411353  " target="_blank">https://doi.org/10.1002/adma.202411353  </a> </li>
-                
-            <li>(2024) <strong style="color: orange;">Daniel Saatchi</strong>, Saewoong Oh, Hyunjoon Yoo, Ji-Seok Kim, Myung-Joon Lee, Mannan Khan, Bernd Wicklein, Manmatha Mahato, Il-Kwon Oh, 
-                <strong style="font-style: italic;">"Dynamic Schwarz Meta-Foams: Customizable Solutions for Environmental Noise Reduction”</strong>,
-                    Advanced Science, 2402872,
-                    <a href="https://doi.org/10.1002/advs.202402872  " target="_blank">https://doi.org/10.1002/advs.202402872 </a> </li>
-
-            <li>(2024) <strong style="color: orange;">Daniel Saatchi</strong>, Saewoong Oh, Hyunjoon Yoo, Ji-Seok Kim, Myung-Joon Lee, Mannan Khan, Bernd Wicklein, Manmatha Mahato, Il-Kwon Oh,
-                <strong style="font-style: italic;">"Dynamic Schwarz Meta-Foams: Customizable Solutions for Environmental Noise Reduction"</strong>,
-                    Advanced Science, 2402872, derived equations and applied mathematical contribution in computational geometry for graded metamaterials and dynamic meta-foams.
-                    <a href="https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fadvs.202402872&file=advs8809-sup-0001-SuppMat.docx" target="_blank">
-                    https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fadvs.202402872&file=advs8809-sup-0001-SuppMat.docx
-                    </a></li>
-
-            
-            <li>(2024) <strong style="color: orange;">Daniel Saatchi</strong>, Mousumi Garai, Hiep Nguyen, Manmatha Mahato, Saewoong Oh, Hyunjoon Yoo, Sheraz Ali Syed, Do Van Lam, Ashhad Kamal Taseer, Il‑Kwon Oh*,
-                <strong style="font-style: italic;">"Multifunctional and Electronically Conjugated Triazine Framework for Superior Electro‑Ionic Artificial Muscles”</strong>,
-                    Advanced Functional Materials, June 2024,
-                    <a href="https://doi.org/10.1002/adfm.202406603  " target="_blank">https://doi.org/10.1002/adfm.202406603 </a> </li>
-                
-                
-            
-            <li>(2024) <strong style="color: orange;">Daniel Saatchi</strong>, Ponnan Sathiyanathan, Yeonju Boo, Manmatha Mahato, Bernd Wicklein, Ji-Seok Kim, Hyunjoon Yoo, Tae-Eun Song, Ji-Seok Kim, Ashhad Kamal Taseer, Wong Jong Kim, Il-Kwon Oh*,
-                <strong style="font-style: italic;">"Nitrogen and Sulfur Rich Covalent Organic Framework-Chitosan Triboelectric Nanogenerator for Disposable Urination Evaluation Tool"</strong>,
-                AI-Telemedicine Application: Urination Health Check-Up, Advanced Materials Technologies, Vol 9, No 4, February 2024,
-                <a href="https://doi.org/10.1002/admt.202301883" target="_blank">https://doi.org/10.1002/admt.202301883</a>
-                </li>
-                
-                
-            <li>(2023) <strong style="color: orange;">Daniel Saatchi</strong>, Saewoong Oh, Il-Kwon Oh*,
-                <strong style="font-style: italic;">"Biomimetic and Biophilic Design of Multifunctional Symbiotic Lichen Schwarz Metamaterial"</strong>,
-                    Advanced Functional Materials, Wiley-VCH, Selected as front cover of journal,
-                    <a href="https://doi.org/10.1002/adfm.202370188" target="_blank">https://doi.org/10.1002/adfm.202370188</a>
-                </li>
-
-            
-            <li>(2023) <strong style="color: orange;">Daniel Saatchi</strong>, Saewoong Oh, Il-Kwon Oh*,
-                <strong style="font-style: italic;">"Biomimetic and Biophilic Design of Multifunctional Symbiotic Lichen Schwarz Metamaterial"</strong>,
-                Environmental Health (Noise) in Architecture Application, Advanced Functional Materials, Vol 33, No 31, August 2023,
-                <a href="https://doi.org/10.1002/adfm.202214580" target="_blank">https://doi.org/10.1002/adfm.202214580</a>
-                </li>
-
-            
-            <li>(2023) <strong style="color: orange;">Daniel Saatchi</strong>, Saewoong Oh, Il-Kwon Oh*,
-                <strong style="font-style: italic;">"Biomimetic and Biophilic Design of Multifunctional Symbiotic Lichen Schwarz Metamaterial"</strong>,
-                Advanced Functional Materials, Wiley-VCH, Vol 33, No 31, blueprints of computational design, engineering economy, manufacturing tolerance of 3D printing, derived mathematics for bioinspired geometries of shell, fungi, plant, and metamaterials.
-                <a href="https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fadfm.202214580&file=adfm202214580-sup-0001-SuppMat.pdf" target="_blank">
-                https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fadfm.202214580&file=adfm202214580-sup-0001-SuppMat.pdf
-                </a>
-                </li>
-
-            <li>(2014) <strong style="color: orange;">Daniel Saatchi</strong>, Mani Fathali, Ali Rahimi Khojasteh,
-                <strong style="font-style: italic;">"The Impacts of Five Different Turbulence Models on the Accuracy of Computational Aeroacoustic Results for an Airfoil and Acoustic Localization Analysis for Well Suited Model"</strong>,
-                International Review of Mechanical Engineering, Vol. 8, No. 2, pp. 387–398,
-            <a href="https://doi.org/10.15866/ireme.v8i2.1393" target="_blank">https://doi.org/10.15866/ireme.v8i2.1393</a></li>
-
-        </ul>    
-      </p>
-    </section>
-
-    <section class="card">
-      <h2 class="type-line" data-delay="2800">
-        Conferences
-      </h2>
-      <p class="type-line" data-delay="2800">
-        <ul>  
-       <li>(2024)  <strong style="color: orange;">Daniel Saatchi</strong>, Myung-Joon Lee, Saewoong Oh, Tushar Prashant pandit, Ji-Seok Kim, Hyunjoon Yoo, Mannan Khan, Bernd Wicklein, Manmathha Mahato, Il-Kwon Oh,
-        <strong style="font-style: italic;">"Minimal Surface Metamaterial Informatics for Mechanical Wave Manipulations”</strong>,
-            Korean Society of Noise and Vibration Engineering, Spring Round, Oral Presentation, Ramada Beach Hotel, Jeju Island, South Korea, May 22 ~ 25, 2023,
-            <a href="https://conf.ksnve.or.kr/ " target="_blank">https://conf.ksnve.or.kr/ </a>
-                </strong></li>
-
-        <li>(2024) <strong style="color: orange;">Daniel Saatchi</strong>, Saewoong Oh, Ji-Seok Kim, Hyunjoon Yoo, Il-Kwon Oh,
-        <strong style="font-style: italic;">"Computational Design and Manufacturing Cost Estimation Method for Nature-Inspired Minimal Surface Metamaterials"</strong>,
-            Korean Society of Mechanical Engineers, Spring Round, Poster Presentation, Yoseu, Incheon, Korea, April 24–27, 2024.
-            <a href="http://eng.ksme.or.kr/" target="_blank">http://eng.ksme.or.kr/</a></li>
-
-        <li>(2023) <strong style="color: orange;">Daniel Saatchi</strong>, Saewoong Oh, Hyunjoon Yoo, Ji-Seok Kim, Il-Kwon Oh,
-        <strong style="font-style: italic;">"Symbiotic Metamaterials for Adaptive Meta-Structures and Environmental Health"</strong>,
-            Korean Society of Mechanical Engineers, Fall Round, Oral Presentation, Song-do, Incheon, Korea, Nov 1–3, 2023.
-            <a href="http://eng.ksme.or.kr/" target="_blank">http://eng.ksme.or.kr/</a></li>
-
-        <li>(2023) <strong style="color: orange;">Daniel Saatchi</strong>, Saewoong Oh, Hyunjoon Yoo, Il-Kwon Oh,
-        <strong style="font-style: italic;">"Material Cost Sensitivity and Acoustic Performances of Minimal Surface Symbiotic Metamaterials for Adaptive Meta-Structures"</strong>,
-            Korean Society of Noise and Vibration Engineering, Fall Round, Oral Presentation, Yoseu, South Korea, October 11–14, 2023.
-            <a href="https://conf.ksnve.or.kr/" target="_blank">https://conf.ksnve.or.kr/</a></li>
-
-        <li>(2023) Ponnan Sathiyanathan, <strong style="color: orange;">Daniel Saatchi</strong>, Manmatha Mahato, Il-Kwon Oh,
-        <strong style="font-style: italic;">"Chitosan Based Triboelectric Energy Harvesting System Comprised of Sulfur and Nitrogen Rich Covalent Organic Framework"</strong>,
-            Nanodevice: Evolving into Intelligent Semiconductors, The 21st International Nanotech Symposium, NANO KOREA, KINTEX, Seoul, Korea, July 5–7, 2023.
-            <a href="https://www.nanokorea.or.kr/" target="_blank">https://www.nanokorea.or.kr/</a></li>
-
-        <li>(2023) <strong style="color: orange;">Daniel Saatchi</strong>, Myung-Joon Lee, Il-Kwon Oh,
-        <strong style="font-style: italic;">"Data Driven Geometric Design of Biomimetic Minimal Surface Metamaterial for Elastic to Acoustic Band Gaps"</strong>,
-            Phononics, Poster Presentation, University of Manchester, Manchester, England, United Kingdom, June 12–16, 2023.
-            <a href="https://phononics2023.org/conf/index.php/phononics/2023" target="_blank">https://phononics2023.org/conf/index.php/phononics/2023</a></li>
-
-        <li>(2023) <strong style="color: orange;">Daniel Saatchi</strong>, Il-Kwon Oh,
-        <strong style="font-style: italic;">"Computational Design of Multiscale Minimal Surface Metamaterial with Sound Blocking and Sound Absorbing Capabilities"</strong>,
-        Korean Society of Noise and Vibration Engineering, Spring Round, Oral Presentation, Sol Beach Samcheok Hotel, South Korea, May 25–28, 2023.
-        <a href="https://conf.ksnve.or.kr/" target="_blank">https://conf.ksnve.or.kr/</a></li>
-
-        <li>(2023) Ponnan Sathiyanathan, <strong style="color: orange;">Daniel Saatchi</strong>, Manmatha Mahato, Il-Kwon Oh,
-        <strong style="font-style: italic;">"Enhancing the Triboelectric Energy Harvesting Performance of Chitosan Polymer Composite via Adding Covalent Organic Framework"</strong>,
-        Poster, Busan, South Korea, May 17–19, 2023.
-        <a href="http://eng.ksme.or.kr/" target="_blank">http://eng.ksme.or.kr/</a></li>
-
-        <li>(2023) <strong style="color: orange;">Daniel Saatchi</strong>, Il-Kwon Oh,
-        <strong style="font-style: italic;">"Bioinspired Minimal Surface Acoustic Metamaterials for Environmental Noise Applications"</strong>,
-         Korean Society of Mechanical Engineering, Poster, Busan, South Korea, May 17–19, 2023.
-        <a href="http://eng.ksme.or.kr/" target="_blank">http://eng.ksme.or.kr/</a></li>
-
-        <li>(2022) <strong style="color: orange;">Daniel Saatchi</strong>, Il-Kwon Oh,
-        <strong style="font-style: italic;">"Computational Design of Graded Minimal Surface Acoustic Metamaterial with Hybrid Band Gaps"</strong>,
-        Korean Society of Noise and Vibration Engineering, Fall Round, Oral Presentation, Jeju Island, South Korea, November 2–5, 2022.
-        <a href="https://conf.ksnve.or.kr/" target="_blank">https://conf.ksnve.or.kr/</a></li>
-
-        <li>(2022) <strong style="color: orange;">Daniel Saatchi</strong>, Myung-Joon Lee, Il-Kwon Oh,
-        <strong style="font-style: italic;">"Tunable Band Gap in Computational Design of Minimal Surface Metamaterial for Acoustic Applications"</strong>,
-        Korean Society of Noise and Vibration Engineering, Spring Round, Oral Presentation, Chongwan, South Korea, May 25–28, 2022.</li>
-
-        <li>(2021) <strong style="color: orange;">Daniel Saatchi</strong>, Il-Kwon Oh,
-        <strong style="font-style: italic;">"Implementation of Triply Poly Minimal Surfaces in Design of Phononic Crystals and Acoustic Metamaterials"</strong>,
-        International Mechanical Engineering Congress & Exposition, American Society of Mechanical Engineers, Oral Presentation, Virtual (Covid19), New York, USA, November 1–5, 2021.
-        <a href="https://doi.org/10.1115/IMECE2021-72624" target="_blank">https://doi.org/10.1115/IMECE2021-72624</a>
+        <li>
+          <strong style="color:var(--yellow)">(2026)</strong>
+          <strong style="color:orange">Daniel Saatchi</strong>,
+          <em>"AI Research Ethics: Discommendation for European Institutional Responsibilities under Marie Skłodowska-Curie Actions"</em>,
+          Microsoft GitHub, Preprint for Journal of Artificial Intelligence, January 31, 2026.<br>
+          <a href="https://github.com/danielsaatchi/msca-ai-discommend-for-european-hosts-ethics" target="_blank">↗ GitHub</a>
         </li>
-        <ul>
-      </p>
+        <li>
+          <strong style="color:var(--yellow)">(2025)</strong>
+          <strong style="color:orange">Daniel Saatchi</strong>, Myung-Joon Lee, Tushar Prashant Pandit, Manmatha Mahato, Il-Kwon Oh,
+          <em>"Artificial Intelligence in Metamaterial Informatics for Sonic Frequency Mechanical Identification Tags"</em>,
+          Advanced Functional Materials, AI-discovery, SFID AI-chip Invention.<br>
+          <a href="https://doi.org/10.1002/adfm.202414670" target="_blank">↗ DOI</a>
+          &nbsp;|&nbsp;
+          <a href="https://github.com/danielsaatchi/EMIT" target="_blank">↗ GitHub (EMIT)</a>
+        </li>
+        <li>
+          <strong style="color:var(--yellow)">(2024)</strong>
+          Mannan Khan, Saewoong Oh, Wonhee Ji, Tae-Eung Song, Manmatha Mahato, <strong style="color:orange">Daniel Saatchi</strong>, et al.,
+          <em>"Wearable Haptics for Orthotropic Actuation based on Perpendicularly Nested Auxetic SMA Knotting"</em>,
+          Advanced Materials.<br>
+          <a href="https://doi.org/10.1002/adma.202411353" target="_blank">↗ DOI</a>
+        </li>
+        <li>
+          <strong style="color:var(--yellow)">(2024)</strong>
+          <strong style="color:orange">Daniel Saatchi</strong>, Saewoong Oh, Hyunjoon Yoo, Ji-Seok Kim, Myung-Joon Lee, Mannan Khan, Bernd Wicklein, Manmatha Mahato, Il-Kwon Oh,
+          <em>"Dynamic Schwarz Meta-Foams: Customizable Solutions for Environmental Noise Reduction"</em>,
+          Advanced Science, 2402872.<br>
+          <a href="https://doi.org/10.1002/advs.202402872" target="_blank">↗ DOI</a>
+          &nbsp;|&nbsp;
+          <a href="https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fadvs.202402872&file=advs8809-sup-0001-SuppMat.docx" target="_blank">↗ Supplementary</a>
+        </li>
+        <li>
+          <strong style="color:var(--yellow)">(2024)</strong>
+          <strong style="color:orange">Daniel Saatchi</strong>, Mousumi Garai, Hiep Nguyen, Manmatha Mahato, Saewoong Oh, Hyunjoon Yoo, Sheraz Ali Syed, Do Van Lam, Ashhad Kamal Taseer, Il-Kwon Oh,
+          <em>"Multifunctional and Electronically Conjugated Triazine Framework for Superior Electro-Ionic Artificial Muscles"</em>,
+          Advanced Functional Materials, June 2024.<br>
+          <a href="https://doi.org/10.1002/adfm.202406603" target="_blank">↗ DOI</a>
+        </li>
+        <li>
+          <strong style="color:var(--yellow)">(2024)</strong>
+          <strong style="color:orange">Daniel Saatchi</strong>, Ponnan Sathiyanathan, Yeonju Boo, Manmatha Mahato, Bernd Wicklein, Ji-Seok Kim, Hyunjoon Yoo, Tae-Eun Song, Ashhad Kamal Taseer, Wong Jong Kim, Il-Kwon Oh,
+          <em>"Nitrogen and Sulfur Rich Covalent Organic Framework-Chitosan Triboelectric Nanogenerator for Disposable Urination Evaluation Tool"</em>,
+          Advanced Materials Technologies, Vol 9, No 4, February 2024.<br>
+          <a href="https://doi.org/10.1002/admt.202301883" target="_blank">↗ DOI</a>
+        </li>
+        <li>
+          <strong style="color:var(--yellow)">(2023)</strong>
+          <strong style="color:orange">Daniel Saatchi</strong>, Saewoong Oh, Il-Kwon Oh,
+          <em>"Biomimetic and Biophilic Design of Multifunctional Symbiotic Lichen Schwarz Metamaterial"</em>,
+          Advanced Functional Materials, Wiley-VCH — Selected as front cover of journal.<br>
+          <a href="https://doi.org/10.1002/adfm.202370188" target="_blank">↗ Cover DOI</a>
+          &nbsp;|&nbsp;
+          <a href="https://doi.org/10.1002/adfm.202214580" target="_blank">↗ Full Paper DOI</a>
+          &nbsp;|&nbsp;
+          <a href="https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fadfm.202214580&file=adfm202214580-sup-0001-SuppMat.pdf" target="_blank">↗ Supplementary</a>
+        </li>
+        <li>
+          <strong style="color:var(--yellow)">(2014)</strong>
+          <strong style="color:orange">Daniel Saatchi</strong>, Mani Fathali, Ali Rahimi Khojasteh,
+          <em>"The Impacts of Five Different Turbulence Models on the Accuracy of Computational Aeroacoustic Results for an Airfoil and Acoustic Localization Analysis for Well Suited Model"</em>,
+          International Review of Mechanical Engineering, Vol. 8, No. 2, pp. 387–398.<br>
+          <a href="https://doi.org/10.15866/ireme.v8i2.1393" target="_blank">↗ DOI</a>
+        </li>
+      </ul>
     </section>
+
+    <!-- CONFERENCES -->
+    <div class="chapter-marker" style="margin-top:3rem">
+      <span>02</span><span class="chapter-line"></span><span data-i18n="pub_ch2_label">Conferences</span>
+    </div>
 
     <section class="card">
-      <h2 class="type-line" data-delay="3800">
-        Startups Venues
-      </h2>
-      <p class="type-line" data-delay="3800">
-        <ul>
-         <li>(2021) <strong style="color: orange;">Daniel Saatchi</strong>, Mohammad Ali Nazrdokht
-        <strong style="font-style: italic;">"XSEALD NEUSARS Intel Ring for Trauma Telemedicine,"</strong>,
-        AI-Telemedicine Startup, collision cofounders, Toronto, CANADA, June, 2021.
-        <a href="https://collisionconf.com/" target="_blank">https://collisionconf.com/</a></li>
-
-       <li>(2020) <strong style="color: orange;">Daniel Saatchi</strong>, Mohammad Ali Nazrdokht
-        <strong style="font-style: italic;">"XSEALD Personalized Trauma Telemedicine AI Systems"</strong>,
-        AI-Telemedicine Startup, websummit conference cofounders, Lisbon, Portugual,  June, 2020.
-        <a href="https://websummit.com/" target="_blank">https://websummit.com/</a></li>
-
-        <li>(2020) <strong style="color: orange;">Daniel Saatchi</strong>, Mohammad Ali Nazrdokht
-        <strong style="font-style: italic;">"XSEALD Personalized Trauma Telemedicine AI Systems"</strong>,
-        AI-Telemedicine Startup, collision conference cofounders, Toronto, CANADA, June, 2020.
-        <a href="https://collisionconf.com/" target="_blank">https://collisionconf.com/</a></li>
-        <ul>
-      </p>
+      <h2 class="type-line" data-delay="800">Conferences</h2>
+      <ul>
+        <li>
+          <strong style="color:var(--yellow)">(2024)</strong>
+          <strong style="color:orange">Daniel Saatchi</strong> et al.,
+          <em>"Minimal Surface Metamaterial Informatics for Mechanical Wave Manipulations"</em>,
+          KSNVE Spring Round, Jeju Island, South Korea, May 2023.<br>
+          <a href="https://conf.ksnve.or.kr/" target="_blank">↗ conf.ksnve.or.kr</a>
+        </li>
+        <li>
+          <strong style="color:var(--yellow)">(2024)</strong>
+          <strong style="color:orange">Daniel Saatchi</strong> et al.,
+          <em>"Computational Design and Manufacturing Cost Estimation Method for Nature-Inspired Minimal Surface Metamaterials"</em>,
+          KSME Spring Round, Poster, Incheon, Korea, April 2024.<br>
+          <a href="http://eng.ksme.or.kr/" target="_blank">↗ ksme.or.kr</a>
+        </li>
+        <li>
+          <strong style="color:var(--yellow)">(2023)</strong>
+          <strong style="color:orange">Daniel Saatchi</strong> et al.,
+          <em>"Symbiotic Metamaterials for Adaptive Meta-Structures and Environmental Health"</em>,
+          KSME Fall Round, Oral, Song-do, Incheon, Korea, Nov 2023.<br>
+          <a href="http://eng.ksme.or.kr/" target="_blank">↗ ksme.or.kr</a>
+        </li>
+        <li>
+          <strong style="color:var(--yellow)">(2023)</strong>
+          <strong style="color:orange">Daniel Saatchi</strong> et al.,
+          <em>"Material Cost Sensitivity and Acoustic Performances of Minimal Surface Symbiotic Metamaterials"</em>,
+          KSNVE Fall Round, Oral, Yeosu, South Korea, Oct 2023.<br>
+          <a href="https://conf.ksnve.or.kr/" target="_blank">↗ conf.ksnve.or.kr</a>
+        </li>
+        <li>
+          <strong style="color:var(--yellow)">(2023)</strong>
+          Ponnan Sathiyanathan, <strong style="color:orange">Daniel Saatchi</strong>, Manmatha Mahato, Il-Kwon Oh,
+          <em>"Chitosan Based Triboelectric Energy Harvesting System…"</em>,
+          NANO KOREA, KINTEX, Seoul, Korea, July 2023.<br>
+          <a href="https://www.nanokorea.or.kr/" target="_blank">↗ nanokorea.or.kr</a>
+        </li>
+        <li>
+          <strong style="color:var(--yellow)">(2023)</strong>
+          <strong style="color:orange">Daniel Saatchi</strong>, Myung-Joon Lee, Il-Kwon Oh,
+          <em>"Data Driven Geometric Design of Biomimetic Minimal Surface Metamaterial for Elastic to Acoustic Band Gaps"</em>,
+          Phononics, Poster, University of Manchester, UK, June 2023.<br>
+          <a href="https://phononics2023.org/conf/index.php/phononics/2023" target="_blank">↗ phononics2023.org</a>
+        </li>
+        <li>
+          <strong style="color:var(--yellow)">(2023)</strong>
+          <strong style="color:orange">Daniel Saatchi</strong>, Il-Kwon Oh,
+          <em>"Computational Design of Multiscale Minimal Surface Metamaterial with Sound Blocking and Sound Absorbing Capabilities"</em>,
+          KSNVE Spring Round, Oral, Samcheok, South Korea, May 2023.<br>
+          <a href="https://conf.ksnve.or.kr/" target="_blank">↗ conf.ksnve.or.kr</a>
+        </li>
+        <li>
+          <strong style="color:var(--yellow)">(2022)</strong>
+          <strong style="color:orange">Daniel Saatchi</strong>, Il-Kwon Oh,
+          <em>"Computational Design of Graded Minimal Surface Acoustic Metamaterial with Hybrid Band Gaps"</em>,
+          KSNVE Fall Round, Oral, Jeju Island, South Korea, November 2022.<br>
+          <a href="https://conf.ksnve.or.kr/" target="_blank">↗ conf.ksnve.or.kr</a>
+        </li>
+        <li>
+          <strong style="color:var(--yellow)">(2022)</strong>
+          <strong style="color:orange">Daniel Saatchi</strong>, Myung-Joon Lee, Il-Kwon Oh,
+          <em>"Tunable Band Gap in Computational Design of Minimal Surface Metamaterial for Acoustic Applications"</em>,
+          KSNVE Spring Round, Oral, Chongwan, South Korea, May 2022.
+        </li>
+        <li>
+          <strong style="color:var(--yellow)">(2021)</strong>
+          <strong style="color:orange">Daniel Saatchi</strong>, Il-Kwon Oh,
+          <em>"Implementation of Triply Poly Minimal Surfaces in Design of Phononic Crystals and Acoustic Metamaterials"</em>,
+          ASME IMECE, Virtual, New York, USA, November 2021.<br>
+          <a href="https://doi.org/10.1115/IMECE2021-72624" target="_blank">↗ DOI</a>
+        </li>
+      </ul>
     </section>
 
- <section class="card">
-      <h2 class="type-line" data-delay="4000">
-        Linkedin Articles 
-      </h2>
-      <p class="type-line" data-delay="4000">
-        <ul>
-         <li>(Feb, 2024) <strong style="color: orange;">Daniel Saatchi</strong>
-          <strong style="font-style: italic;">,"DS Review: Why Engineers Can't Be Worst Politicians",
-        </strong>
-        DS DESIGNS Business Publications on Linkedin Article: 
-        <a href="https://www.linkedin.com/pulse/ds-review-why-engineers-cant-worst-politicians-danielsaatchi-27ecc/" target="_blank">
-          https://www.linkedin.com/pulse/ds-review-why-engineers-cant-worst-politicians-danielsaatchi-27ecc/</a></li>
+    <!-- STARTUP VENUES -->
+    <div class="chapter-marker" style="margin-top:3rem">
+      <span>03</span><span class="chapter-line"></span><span data-i18n="pub_ch3_label">Startup Venues</span>
+    </div>
 
-         <li>(Dec, 2023) <strong style="color: orange;">Daniel Saatchi</strong>
-        <strong style="font-style: italic;">,"DS Review: 9 Shades of Angel Investors",
-        </strong>
-        DS DESIGNS Business Publications on Linkedin Article: 
-        <a href="https://www.linkedin.com/pulse/ds-review-9-shades-angel-investors-danielsaatchi-jxfdc" target="_blank">
-          https://www.linkedin.com/pulse/ds-review-9-shades-angel-investors-danielsaatchi-jxfdc</a></li>
-        
-          <li>(Jul, 2023) <strong style="color: orange;">Daniel Saatchi</strong>
-        <strong style="font-style: italic;">,"DS Review: 9 Shadess of Parrallel Entreprneurs Versus VC Firms",
-        </strong>
-        DS DESIGNS Business Publications on Linkedin Article: 
-        <a href="https://www.linkedin.com/pulse/ds-review-9-shades-parallel-entrepeneurs-versus-vc-firms/" target="_blank">
-          https://www.linkedin.com/pulse/ds-review-9-shades-parallel-entrepeneurs-versus-vc-firms/</a></li>
+    <section class="card">
+      <h2 class="type-line" data-delay="1000">Startup Venues</h2>
+      <ul>
+        <li>
+          <strong style="color:var(--yellow)">(2021)</strong>
+          <strong style="color:orange">Daniel Saatchi</strong>, Mohammad Ali Nazrdokht,
+          <em>"XSEALD NEUSARS Intel Ring for Trauma Telemedicine"</em>,
+          AI-Telemedicine Startup, Collision Cofounders, Toronto, Canada, June 2021.<br>
+          <a href="https://collisionconf.com/" target="_blank">↗ collisionconf.com</a>
+        </li>
+        <li>
+          <strong style="color:var(--yellow)">(2020)</strong>
+          <strong style="color:orange">Daniel Saatchi</strong>, Mohammad Ali Nazrdokht,
+          <em>"XSEALD Personalized Trauma Telemedicine AI Systems"</em>,
+          AI-Telemedicine Startup, Web Summit, Lisbon, Portugal, June 2020.<br>
+          <a href="https://websummit.com/" target="_blank">↗ websummit.com</a>
+        </li>
+        <li>
+          <strong style="color:var(--yellow)">(2020)</strong>
+          <strong style="color:orange">Daniel Saatchi</strong>, Mohammad Ali Nazrdokht,
+          <em>"XSEALD Personalized Trauma Telemedicine AI Systems"</em>,
+          AI-Telemedicine Startup, Collision Conference, Toronto, Canada, June 2020.<br>
+          <a href="https://collisionconf.com/" target="_blank">↗ collisionconf.com</a>
+        </li>
+      </ul>
+    </section>
 
-           <li>(Jun, 2023) <strong style="color: orange;">Daniel Saatchi</strong>
-        <strong style="font-style: italic;">,"DS Review: 9 Types of Entreprneurship [4] Self-Actualization",
-        </strong>
-        DS DESIGNS Business Publications on Linkedin Article: 
-        <a href="https://www.linkedin.com/pulse/ds-review-9-types-entrepreneurship-4-self-actualization/" target="_blank">
-          https://www.linkedin.com/pulse/ds-review-9-types-entrepreneurship-4-self-actualization/</a></li>
+    <!-- LINKEDIN ARTICLES -->
+    <div class="chapter-marker" style="margin-top:3rem">
+      <span>04</span><span class="chapter-line"></span><span data-i18n="pub_ch4_label">LinkedIn Articles</span>
+    </div>
 
-        <li>(Mar, 2023) <strong style="color: orange;">Daniel Saatchi</strong>
-        <strong style="font-style: italic;">,"DS Review: 9 Critical Thoughts [4] Slow Movement Culture",
-        </strong>
-        DS DESIGNS Business Publications on Linkedin Article: 
-        <a href="https://www.linkedin.com/pulse/ds-review-9-critical-thoughts-4-slow-movement-culture-danielsaatchi/" target="_blank">
-          https://www.linkedin.com/pulse/ds-review-9-critical-thoughts-4-slow-movement-culture-danielsaatchi/</a></li>
-
-
-
-        <li>(Feb, 2023) <strong style="color: orange;">Daniel Saatchi</strong>
-        <strong style="font-style: italic;">,"DS Review: 9 with-it Countries [4] Entrepreneurial Freedom",
-        </strong>
-        DS DESIGNS Business Publications on Linkedin Article: 
-        <a href="https://www.linkedin.com/pulse/ds-review-9-with-it-countries-4-entrepreneurial-freedom/" target="_blank">
-          https://www.linkedin.com/pulse/ds-review-9-with-it-countries-4-entrepreneurial-freedom/</a></li>
-
-        <li>(Jan, 2023) <strong style="color: orange;">Daniel Saatchi</strong>
-        <strong style="font-style: italic;">,"DS Review: How [2] Invest in Technology Design",
-        </strong>
-        DS DESIGNS Business Publications on Linkedin Article: 
-        <a href="https://www.linkedin.com/pulse/ds-review-how-2-invest-technology-design-danielsaatchi/" target="_blank">
-          https://www.linkedin.com/pulse/ds-review-how-2-invest-technology-design-danielsaatchi/</a></li>
-
-        <li>(Nov, 2022) <strong style="color: orange;">Daniel Saatchi</strong>
-        <strong style="font-style: italic;">,"DS Review: 9 With-It Politicians [4] Entrepreneurs",
-        </strong>
-        DS DESIGNS Business Publications on Linkedin Article: 
-        <a href="https://www.linkedin.com/pulse/ds-review-9-with-it-politicians-4-entrepreneurs-danielsaatchi/" target="_blank">
-          https://www.linkedin.com/pulse/ds-review-9-with-it-politicians-4-entrepreneurs-danielsaatchi/</a></li>
-
-        <li>(Nov, 2022) <strong style="color: orange;">Daniel Saatchi</strong>
-        <strong style="font-style: italic;">,"What is Conceptual Design?",
-        </strong>
-        DS DESIGNS Business Publications on Linkedin Article: 
-        <a href="https://www.linkedin.com/pulse/what-conceptual-design-danielsaatchi/" target="_blank">
-          https://www.linkedin.com/pulse/what-conceptual-design-danielsaatchi/</a></li>
-
-        <li>(Oct, 2022) <strong style="color: orange;">Daniel Saatchi</strong>
-        <strong style="font-style: italic;">,"Entrepreneurs Pushing Back Politicians",
-        </strong>
-        DS DESIGNS Business Publications on Linkedin Article: 
-        <a href="https://www.linkedin.com/pulse/entrepreneurs-punching-back-politicians-danielsaatchi/" target="_blank">
-          https://www.linkedin.com/pulse/entrepreneurs-punching-back-politicians-danielsaatchi/</a></li>
-
-               <ul>
-      </p>
+    <section class="card">
+      <h2 class="type-line" data-delay="1200">LinkedIn Articles</h2>
+      <ul>
+        <li><strong style="color:var(--yellow)">(Feb 2024)</strong> <strong style="color:orange">Daniel Saatchi</strong>, <em>"DS Review: Why Engineers Can't Be Worst Politicians"</em> — <a href="https://www.linkedin.com/pulse/ds-review-why-engineers-cant-worst-politicians-danielsaatchi-27ecc/" target="_blank">↗ LinkedIn</a></li>
+        <li><strong style="color:var(--yellow)">(Dec 2023)</strong> <strong style="color:orange">Daniel Saatchi</strong>, <em>"DS Review: 9 Shades of Angel Investors"</em> — <a href="https://www.linkedin.com/pulse/ds-review-9-shades-angel-investors-danielsaatchi-jxfdc" target="_blank">↗ LinkedIn</a></li>
+        <li><strong style="color:var(--yellow)">(Jul 2023)</strong> <strong style="color:orange">Daniel Saatchi</strong>, <em>"DS Review: 9 Shades of Parallel Entrepreneurs Versus VC Firms"</em> — <a href="https://www.linkedin.com/pulse/ds-review-9-shades-parallel-entrepeneurs-versus-vc-firms/" target="_blank">↗ LinkedIn</a></li>
+        <li><strong style="color:var(--yellow)">(Jun 2023)</strong> <strong style="color:orange">Daniel Saatchi</strong>, <em>"DS Review: 9 Types of Entrepreneurship [4] Self-Actualization"</em> — <a href="https://www.linkedin.com/pulse/ds-review-9-types-entrepreneurship-4-self-actualization/" target="_blank">↗ LinkedIn</a></li>
+        <li><strong style="color:var(--yellow)">(Mar 2023)</strong> <strong style="color:orange">Daniel Saatchi</strong>, <em>"DS Review: 9 Critical Thoughts [4] Slow Movement Culture"</em> — <a href="https://www.linkedin.com/pulse/ds-review-9-critical-thoughts-4-slow-movement-culture-danielsaatchi/" target="_blank">↗ LinkedIn</a></li>
+        <li><strong style="color:var(--yellow)">(Feb 2023)</strong> <strong style="color:orange">Daniel Saatchi</strong>, <em>"DS Review: 9 With-It Countries [4] Entrepreneurial Freedom"</em> — <a href="https://www.linkedin.com/pulse/ds-review-9-with-it-countries-4-entrepreneurial-freedom/" target="_blank">↗ LinkedIn</a></li>
+        <li><strong style="color:var(--yellow)">(Jan 2023)</strong> <strong style="color:orange">Daniel Saatchi</strong>, <em>"DS Review: How [2] Invest in Technology Design"</em> — <a href="https://www.linkedin.com/pulse/ds-review-how-2-invest-technology-design-danielsaatchi/" target="_blank">↗ LinkedIn</a></li>
+        <li><strong style="color:var(--yellow)">(Nov 2022)</strong> <strong style="color:orange">Daniel Saatchi</strong>, <em>"DS Review: 9 With-It Politicians [4] Entrepreneurs"</em> — <a href="https://www.linkedin.com/pulse/ds-review-9-with-it-politicians-4-entrepreneurs-danielsaatchi/" target="_blank">↗ LinkedIn</a></li>
+        <li><strong style="color:var(--yellow)">(Nov 2022)</strong> <strong style="color:orange">Daniel Saatchi</strong>, <em>"What is Conceptual Design?"</em> — <a href="https://www.linkedin.com/pulse/what-conceptual-design-danielsaatchi/" target="_blank">↗ LinkedIn</a></li>
+        <li><strong style="color:var(--yellow)">(Oct 2022)</strong> <strong style="color:orange">Daniel Saatchi</strong>, <em>"Entrepreneurs Pushing Back Politicians"</em> — <a href="https://www.linkedin.com/pulse/entrepreneurs-punching-back-politicians-danielsaatchi/" target="_blank">↗ LinkedIn</a></li>
+      </ul>
     </section>
 
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p class="type-line" data-delay="5800">
-      © 2026-present 🛋️ ONSOFA.ai – All rights reserved.
-      </p>
+      <p class="type-line" data-delay="2000" data-i18n="footer">© 2025-present 🛋️ ONSOFA.ai – All rights reserved.</p>
     </div>
   </footer>
 
   <script src="typing.js"></script>
+  <script>
+    // floating particles
+    const chars = ['0','1','∇','λ','∑','θ','σ','∂','α','β','π','∞','[4]','>/'];
+    const c = document.getElementById('particles');
+    for (let i = 0; i < 14; i++) {
+      const p = document.createElement('span');
+      p.className = 'particle';
+      p.textContent = chars[Math.floor(Math.random() * chars.length)];
+      p.style.left = Math.random() * 100 + '%';
+      p.style.animationDuration = (10 + Math.random() * 14) + 's';
+      p.style.animationDelay = (-Math.random() * 20) + 's';
+      c.appendChild(p);
+    }
+  </script>
 </body>
 </html>
