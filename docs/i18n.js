@@ -29,7 +29,7 @@ en: {
   r4:  '>/: AI in Financial Engineering and Blockchain Finance',
   r5:  '>/: AI Ethics & Ethical-Hacking of AI Agents',
   r6:  '>/: AI in Telecommunication and Telemedicine',
-  r7:  '>/: AI-Chips and Metamaterials Informatics',
+  r7:  '>/: AI-Chips and Acoustic Metamaterials Informatics',
   r8:  '>/: Neuromorphic Brain Interface Metamaterials/Machines',
   r9:  '>/: Sonic Intelligence and Transponder AI Systems',
   r10: '>/: Mechanical Intelligence & Mechanical Computers',
