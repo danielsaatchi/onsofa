@@ -19,6 +19,8 @@ onsofa/docs/
 ├── i18ns.js                   # Multilang setup
 ├── server.py                  # Port Forwarding and Server 
 ├── README.md                  # Instruction
+├── SKILLS.md                  # for Automation in Claude Code
+├── CLAUDE.md                  # for Automation in Claude Code 
 ├── CODE_OF_CONDUCT.md         # Opensource note
 └── fonts/
     └── CascadiaCode-Regular.woff2   # Optional – if not from URL (check .css file)
