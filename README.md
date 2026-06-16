@@ -48,14 +48,18 @@ by small business and personal brands:
 Reader mode compatibility with Apple Safari & Google Chrome (mobile and desktop devices)
 <img width="1943" height="816" alt="image" src="https://github.com/user-attachments/assets/041e3d2c-f4ff-4d86-b828-f5634b4f22d7" />
 
-## Update note (version 0.2.1) 
-1. Reported bugs for version 0.1.5 are fixed.
-2. New features may be available for the upcoming version 0.2.2
+## Automation in Claude Code
+<img width="1772" height="797" alt="image" src="https://github.com/user-attachments/assets/722604fe-ed16-44dc-b8e5-59ff0bac6d7b" />
+
+## Update note (version 0.2.2) 
+1. Reported bugs for version 0.2.1 are fixed.
+2. New features may be available for the upcoming version 0.2.3
 3. Multilanguage option is added 
 4. Minimal math animation is added
 5. Toggle switch for light and dark theme is added
 6. Onsofa dynamic-GPT theme is adopted and customized for small business and personal brand  like ONSOFA, XSEALD, DAATCHI, DSDT, and AIJAM for various colors and additional deployments and developments depending on needs.
 7. Reader mode compatibility with Apple Safari & Google Chrome (mobile and desktop devices)
+8. `SKILLS.md` and `CLAUDE.md` are added for Claude Code 
 
 
 Happy hacking! 🚀
