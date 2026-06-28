@@ -59,7 +59,7 @@ Reader mode compatibility with Apple Safari & Google Chrome (mobile and desktop 
 3. Multilanguage option is added 
 4. Minimal math animation is added
 5. Toggle switch for light and dark theme is added
-6. Onsofa dynamic-GPT theme is adopted and customized for small business and personal brand  like ONSOFA, XSEALD, DAATCHI, DSDT, and AIJAM for various colors and additional deployments and developments depending on needs.
+6. Onsofa dynamic-GPT theme is adopted and customized for small business and personal brand  like ONSOFA, XSEALD, DAATCHI, DSDT, SAXOD, and AIJAM for various colors and additional deployments and developments depending on needs.
 7. Reader mode compatibility with Apple Safari & Google Chrome (mobile and desktop devices)
 8. `SKILLS.md` and `CLAUDE.md` are added for Claude Code 
 
